@@ -15457,18 +15457,13 @@ __publicField(WasdControlsComponent, "Properties", {
 var LogOnClick = class extends Component {
   init() {
     this.direction = vec3_exports.create();
-    this.tmpVec = vec3_exports.create();
-    this.tmpVec1 = vec3_exports.create();
+    this.positionInFrontOfEye = vec3_exports.create();
   }
   start() {
     this.active = false;
-    console.log(this.infoBox);
-    console.log(this.infoTextObject);
     const target = this.object.getComponent("cursor-target");
     if (this.infoTextObject) {
       this.informationText = this.infoTextObject.getComponent("text");
-    } else {
-      console.log("no object");
     }
     this.infoTextObject.active = this.active;
     this.infoBox.active = this.active;
@@ -15476,42 +15471,26 @@ var LogOnClick = class extends Component {
   }
   onClick() {
     this.active = !this.active;
-    if (this.active && this.informationText) {
-      this.informationText.text = this.message;
-      const cameraPosition = this.getCameraPosition();
-      this.makeInfoBoxFaceCamera(cameraPosition);
-      let objectPosition = this.object.getPositionWorld();
-      let newPosition = vec3_exports.create();
-      vec3_exports.set(
-        newPosition,
-        objectPosition[0],
-        objectPosition[1] + 1,
-        objectPosition[2]
-      );
-      this.infoBox.setPositionWorld(newPosition);
-    }
     this.infoTextObject.active = this.active;
     this.infoBox.active = this.active;
+    if (this.active && this.informationText) {
+      this.informationText.text = this.message;
+      this.positionInfoBoxInFrontOfLeftEye();
+    }
   }
-  getCameraPosition() {
-    return this.vrCamera.getPositionWorld();
-  }
-  makeInfoBoxFaceCamera(cameraPosition) {
-    this.infoBoxPosition = this.infoBox.getPositionWorld();
-    this.directionToCamera = vec3_exports.subtract(
-      vec3_exports.create(),
-      [cameraPosition[0], this.infoBoxPosition[1], cameraPosition[2]],
-      this.infoBoxPosition
+  positionInfoBoxInFrontOfLeftEye() {
+    const eyePosition = this.vrCamera.getPositionWorld();
+    const eyeForward = this.vrCamera.getForwardWorld(this.direction);
+    const distanceInFront = 2;
+    vec3_exports.scaleAndAdd(
+      this.positionInFrontOfEye,
+      eyePosition,
+      eyeForward,
+      distanceInFront
     );
-    vec3_exports.normalize(this.directionToCamera, this.directionToCamera);
-    this.angle = Math.atan2(
-      this.directionToCamera[2],
-      this.directionToCamera[0]
-    );
-    this.rotation = quat_exports.create();
-    quat_exports.rotateY(this.rotation, quat_exports.create(), -this.angle);
-    console.log("infotextobject", this.infoTextObject);
-    this.infoBox.setRotationWorld(this.rotation);
+    this.infoBox.setPositionWorld(this.positionInFrontOfEye);
+    const cameraOrientation = this.vrCamera.getRotationWorld();
+    this.infoBox.setRotationWorld(cameraOrientation);
   }
 };
 __publicField(LogOnClick, "TypeName", "log-on-click");

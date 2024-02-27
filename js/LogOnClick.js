@@ -16,21 +16,17 @@ export class LogOnClick extends Component {
 
   init() {
     this.direction = vec3.create()
-    this.tmpVec = vec3.create()
-    this.tmpVec1 = vec3.create()
+    this.positionInFrontOfEye = vec3.create()
   }
 
   start() {
     this.active = false
-    console.log(this.infoBox)
-    console.log(this.infoTextObject)
     const target = this.object.getComponent('cursor-target')
 
     if (this.infoTextObject) {
       this.informationText = this.infoTextObject.getComponent('text')
-    } else {
-      console.log('no object')
     }
+
     this.infoTextObject.active = this.active
     this.infoBox.active = this.active
     target.addClickFunction(this.onClick.bind(this))
@@ -38,57 +34,30 @@ export class LogOnClick extends Component {
 
   onClick() {
     this.active = !this.active
+    this.infoTextObject.active = this.active
+    this.infoBox.active = this.active
 
     if (this.active && this.informationText) {
       this.informationText.text = this.message
-
-      // Fetch the current position of the camera to orient the info box towards it
-      const cameraPosition = this.getCameraPosition()
-
-      // Ensure the info box faces the camera
-      this.makeInfoBoxFaceCamera(cameraPosition)
-
-      // Calculate the new position for the info box to ensure it's properly placed
-      // relative to the object and above it, while facing the camera.
-      let objectPosition = this.object.getPositionWorld()
-      let newPosition = vec3.create()
-
-      // Example adjustment: position the info box slightly above the object
-      vec3.set(
-        newPosition,
-        objectPosition[0],
-        objectPosition[1] + 1,
-        objectPosition[2]
-      ) // Adjust Y-axis as needed
-
-      // Set the new position for the info box
-      this.infoBox.setPositionWorld(newPosition)
+      this.positionInfoBoxInFrontOfLeftEye()
     }
-
-    // Toggle the visibility of the text and the box
-    this.infoTextObject.active = this.active
-    this.infoBox.active = this.active
   }
 
-  getCameraPosition() {
-    return this.vrCamera.getPositionWorld()
-  }
+  positionInfoBoxInFrontOfLeftEye() {
+    const eyePosition = this.vrCamera.getPositionWorld()
+    const eyeForward = this.vrCamera.getForwardWorld(this.direction)
 
-  makeInfoBoxFaceCamera(cameraPosition) {
-    this.infoBoxPosition = this.infoBox.getPositionWorld()
-    this.directionToCamera = vec3.subtract(
-      vec3.create(),
-      [cameraPosition[0], this.infoBoxPosition[1], cameraPosition[2]],
-      this.infoBoxPosition
+    const distanceInFront = 2
+    vec3.scaleAndAdd(
+      this.positionInFrontOfEye,
+      eyePosition,
+      eyeForward,
+      distanceInFront
     )
-    vec3.normalize(this.directionToCamera, this.directionToCamera)
-    this.angle = Math.atan2(
-      this.directionToCamera[2],
-      this.directionToCamera[0]
-    )
-    this.rotation = quat.create()
-    quat.rotateY(this.rotation, quat.create(), -this.angle)
-    console.log('infotextobject', this.infoTextObject)
-    this.infoBox.setRotationWorld(this.rotation)
+
+    this.infoBox.setPositionWorld(this.positionInFrontOfEye)
+
+    const cameraOrientation = this.vrCamera.getRotationWorld()
+    this.infoBox.setRotationWorld(cameraOrientation)
   }
 }
