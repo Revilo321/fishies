@@ -1,0 +1,10 @@
+import * as __wonderlandengine_components from '@wonderlandengine/components';
+_registerEditor(__wonderlandengine_components);
+import * as _C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_CanvasUI_js from 'C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/CanvasUI.js';
+_registerEditor(_C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_CanvasUI_js);
+import * as _C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_LogOnClick_js from 'C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/LogOnClick.js';
+_registerEditor(_C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_LogOnClick_js);
+import * as _C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_button_js from 'C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/button.js';
+_registerEditor(_C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_button_js);
+import * as _C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_uiHandler_js from 'C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/uiHandler.js';
+_registerEditor(_C__Users_zexer_OneDrive_Dokumenter_WonderlandEngine_fishies_js_uiHandler_js);
