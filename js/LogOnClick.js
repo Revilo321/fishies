@@ -1,5 +1,5 @@
 import { Component, Property } from '@wonderlandengine/api'
-import { vec3, mat4, quat } from 'gl-matrix'
+import { vec3 } from 'gl-matrix'
 
 /**
  * LogOnClick

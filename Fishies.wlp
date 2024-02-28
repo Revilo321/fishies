@@ -46,15 +46,15 @@
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
-                1.1920928955078125e-7
+                -0.1778643,
+                -0.0406923,
+                -0.0623005
             ],
             "rotation": [
-                -0.7072496,
+                -0.7072563,
                 0.0,
                 0.0,
-                0.7069638
+                0.7069572
             ],
             "scaling": [
                 4.0,
@@ -84,13 +84,20 @@
                     "type": "cursor-target"
                 },
                 {
-                    "type": "log-on-click"
+                    "type": "log-on-click",
+                    "log-on-click": {
+                        "infoBoxName": "Information",
+                        "infoTextObject": "257",
+                        "message": "This is text",
+                        "infoBox": "256",
+                        "vrCamera": "18"
+                    }
                 }
             ],
             "translation": [
-                2.9802322387695313e-8,
-                0.4999999,
-                5.960464477539065e-8
+                3.2405128,
+                0.4358609,
+                3.1588444
             ],
             "rotation": [
                 0.0,
@@ -216,14 +223,14 @@
                 {
                     "type": "light",
                     "light": {
-                        "intensity": 3.3329999
+                        "intensity": 2.7009999
                     }
                 }
             ],
             "translation": [
-                0.0,
-                3.0,
-                2.0
+                -0.9356813,
+                2.7792155,
+                2.7719492
             ],
             "rotation": [
                 0.0,
@@ -262,62 +269,6 @@
                 1.0,
                 1.0,
                 1.0
-            ]
-        },
-        "24": {
-            "name": "Cone",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "10",
-                        "material": "25"
-                    }
-                }
-            ],
-            "translation": [
-                1.5,
-                1.0,
-                -1.4901161193847656e-8
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                1.0,
-                1.0,
-                1.0
-            ]
-        },
-        "27": {
-            "name": "Sphere",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "9",
-                        "material": "26"
-                    }
-                }
-            ],
-            "translation": [
-                0.4999999,
-                0.75,
-                -1.25
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.75,
-                0.75,
-                0.75
             ]
         },
         "53": {
@@ -1908,13 +1859,17 @@
             "name": "InfoBox",
             "components": [
                 {
-                    "type": "mesh"
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "202"
+                    }
                 }
             ],
             "translation": [
-                -2.4,
-                0.3,
-                0.0
+                -5.2186298,
+                2.1731626,
+                -0.8697606
             ],
             "rotation": [
                 0.0,
@@ -1923,13 +1878,13 @@
                 1.0
             ],
             "scaling": [
-                1.0663974,
-                3.1295797,
-                1.4711166
+                1.166,
+                0.93,
+                1.4711165
             ]
         },
         "257": {
-            "name": "Text",
+            "name": "Information",
             "parent": "256",
             "components": [
                 {
@@ -1937,8 +1892,8 @@
                 }
             ],
             "translation": [
-                0.0,
-                0.0,
+                -0.014,
+                0.822,
                 0.0
             ],
             "rotation": [
@@ -1949,9 +1904,508 @@
             ],
             "scaling": [
                 1.7935272,
-                0.9299997,
+                1.6299999,
                 0.9299997
             ]
+        },
+        "262": {
+            "link": {
+                "name": "Camera",
+                "file": "models\\fish.blend"
+            }
+        },
+        "283": {
+            "link": {
+                "name": "Camera",
+                "file": "models\\fish.blend"
+            }
+        },
+        "294": {
+            "link": {
+                "name": "Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "translation": [
+                2.3157479,
+                1.4933917,
+                -2.0175378
+            ],
+            "rotation": [
+                -0.7071056,
+                0.0,
+                0.0,
+                0.7071079
+            ],
+            "scaling": [
+                0.4,
+                0.3999255,
+                0.3999255
+            ],
+            "components": [
+                {
+                    "type": "animation",
+                    "animation": {
+                        "preview": true,
+                        "animation": "343",
+                        "autoplay": true
+                    }
+                },
+                {
+                    "type": "collision"
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "log-on-click",
+                    "log-on-click": {
+                        "vrCamera": "18",
+                        "infoTextObject": "257",
+                        "infoBox": "256",
+                        "message": "This is a Paracanthurus. A very known fish from Nemo, you may remember it as Dory"
+                    }
+                }
+            ]
+        },
+        "295": {
+            "link": {
+                "name": "root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "294"
+        },
+        "296": {
+            "link": {
+                "name": "GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "295"
+        },
+        "297": {
+            "link": {
+                "name": "Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "296"
+        },
+        "298": {
+            "link": {
+                "name": "GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "297"
+        },
+        "299": {
+            "link": {
+                "name": "GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "298",
+            "skin": "293"
+        },
+        "300": {
+            "link": {
+                "name": "Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "299",
+            "skin": "293"
+        },
+        "301": {
+            "link": {
+                "name": "Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "300",
+            "skin": "293"
+        },
+        "302": {
+            "link": {
+                "name": "Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "301",
+            "skin": "293"
+        },
+        "303": {
+            "link": {
+                "name": "Root.015_3<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "302",
+            "skin": "293"
+        },
+        "304": {
+            "link": {
+                "name": "Root.017_1<Root.015_3<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "303",
+            "skin": "293"
+        },
+        "305": {
+            "link": {
+                "name": "Root.018_2<Root.015_3<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "303",
+            "skin": "293"
+        },
+        "306": {
+            "link": {
+                "name": "Pectoral_R_7<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "302",
+            "skin": "293"
+        },
+        "307": {
+            "link": {
+                "name": "Pectoral_R.002_6<Pectoral_R_7<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "306",
+            "skin": "293"
+        },
+        "308": {
+            "link": {
+                "name": "Pectoral_R.001_5<Pectoral_R.002_6<Pectoral_R_7<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "307",
+            "skin": "293"
+        },
+        "309": {
+            "link": {
+                "name": "Pectoral_R.003_4<Pectoral_R.001_5<Pectoral_R.002_6<Pectoral_R_7<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "308",
+            "skin": "293"
+        },
+        "310": {
+            "link": {
+                "name": "Pectoral_L_11<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "302",
+            "skin": "293"
+        },
+        "311": {
+            "link": {
+                "name": "Pectoral_L.002_10<Pectoral_L_11<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "310",
+            "skin": "293"
+        },
+        "312": {
+            "link": {
+                "name": "Pectoral_L.001_9<Pectoral_L.002_10<Pectoral_L_11<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "311",
+            "skin": "293"
+        },
+        "313": {
+            "link": {
+                "name": "Pectoral_L.003_8<Pectoral_L.001_9<Pectoral_L.002_10<Pectoral_L_11<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "312",
+            "skin": "293"
+        },
+        "314": {
+            "link": {
+                "name": "Pelvic_L_14<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "302",
+            "skin": "293"
+        },
+        "315": {
+            "link": {
+                "name": "Pelvic_L.001_12<Pelvic_L_14<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "314",
+            "skin": "293"
+        },
+        "316": {
+            "link": {
+                "name": "Pelvic_L.002_13<Pelvic_L_14<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "314",
+            "skin": "293"
+        },
+        "317": {
+            "link": {
+                "name": "Pelvic_R_17<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "302",
+            "skin": "293"
+        },
+        "318": {
+            "link": {
+                "name": "Pelvic_R.001_15<Pelvic_R_17<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "317",
+            "skin": "293"
+        },
+        "319": {
+            "link": {
+                "name": "Pelvic_R.002_16<Pelvic_R_17<Head_18<Root.002_19<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "317",
+            "skin": "293"
+        },
+        "320": {
+            "link": {
+                "name": "Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "300",
+            "skin": "293"
+        },
+        "321": {
+            "link": {
+                "name": "Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "320",
+            "skin": "293"
+        },
+        "322": {
+            "link": {
+                "name": "Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "321",
+            "skin": "293"
+        },
+        "323": {
+            "link": {
+                "name": "Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "322",
+            "skin": "293"
+        },
+        "324": {
+            "link": {
+                "name": "Root.007_26<Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "323",
+            "skin": "293"
+        },
+        "325": {
+            "link": {
+                "name": "Root.009_22<Root.007_26<Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "324",
+            "skin": "293"
+        },
+        "326": {
+            "link": {
+                "name": "Root.012_21<Root.009_22<Root.007_26<Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "325",
+            "skin": "293"
+        },
+        "327": {
+            "link": {
+                "name": "Root.014_20<Root.012_21<Root.009_22<Root.007_26<Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "326",
+            "skin": "293"
+        },
+        "328": {
+            "link": {
+                "name": "Root.010_25<Root.007_26<Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "324",
+            "skin": "293"
+        },
+        "329": {
+            "link": {
+                "name": "Root.011_24<Root.010_25<Root.007_26<Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "328",
+            "skin": "293"
+        },
+        "330": {
+            "link": {
+                "name": "Root.013_23<Root.011_24<Root.010_25<Root.007_26<Root.006_27<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "329",
+            "skin": "293"
+        },
+        "331": {
+            "link": {
+                "name": "Root.027_28<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "322",
+            "skin": "293"
+        },
+        "332": {
+            "link": {
+                "name": "Root.021_29<Root.005_30<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "322",
+            "skin": "293"
+        },
+        "333": {
+            "link": {
+                "name": "Root.016_31<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "321",
+            "skin": "293"
+        },
+        "334": {
+            "link": {
+                "name": "Root.019_32<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "321",
+            "skin": "293"
+        },
+        "335": {
+            "link": {
+                "name": "Root.020_33<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "321",
+            "skin": "293"
+        },
+        "336": {
+            "link": {
+                "name": "Root.025_34<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "321",
+            "skin": "293"
+        },
+        "337": {
+            "link": {
+                "name": "Root.026_35<Root.004_36<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "321",
+            "skin": "293"
+        },
+        "338": {
+            "link": {
+                "name": "Root.022_37<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "320",
+            "skin": "293"
+        },
+        "339": {
+            "link": {
+                "name": "Root.023_38<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "320",
+            "skin": "293"
+        },
+        "340": {
+            "link": {
+                "name": "Root.024_39<Root.003_40<Root_41<GLTF_created_0_rootJoint<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "320",
+            "skin": "293"
+        },
+        "341": {
+            "link": {
+                "name": "Object_7<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "298",
+            "components": [
+                {
+                    "mesh": {
+                        "skin": "293"
+                    }
+                }
+            ],
+            "translation": [
+                0.2931754,
+                1.0987689,
+                -0.5845327
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ]
+        },
+        "342": {
+            "link": {
+                "name": "fINS_42<GLTF_created_0<Armature_43<GLTF_SceneRootNode<root<Sketchfab_model",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "parent": "298"
+        },
+        "408": {
+            "name": "Panel",
+            "components": [
+                {
+                    "type": "mesh",
+                    "mesh": {
+                        "mesh": "7",
+                        "material": "417"
+                    }
+                },
+                {
+                    "type": "uiHandler",
+                    "uiHandler": {
+                        "panel": "simple"
+                    },
+                    "active": true
+                },
+                {
+                    "type": "cursor-target"
+                }
+            ],
+            "translation": [
+                -2.8175165,
+                1.3179996,
+                0.058579
+            ],
+            "rotation": [
+                -0.1736482,
+                0.0,
+                0.0,
+                0.9848077
+            ],
+            "scaling": [
+                0.5,
+                0.5,
+                0.0099999
+            ],
+            "parent": null
         }
     },
     "meshes": {
@@ -2089,6 +2543,36 @@
                 "name": "TeleportIndicator",
                 "file": "models\\teleport-indicator.glb"
             }
+        },
+        "260": {
+            "link": {
+                "name": "Cube",
+                "file": "models\\fish.blend"
+            }
+        },
+        "268": {
+            "link": {
+                "name": "mesh_0",
+                "file": "models\\fish.obj"
+            }
+        },
+        "273": {
+            "link": {
+                "name": "0",
+                "file": "models\\fish.3ds"
+            }
+        },
+        "292": {
+            "link": {
+                "name": "Object_0",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "352": {
+            "link": {
+                "name": "Object_0",
+                "file": "models\\scene.gltf"
+            }
         }
     },
     "textures": {
@@ -2115,6 +2599,67 @@
                 "name": "texture_1",
                 "file": "models\\oculus-touch-v2-right.glb"
             }
+        },
+        "258": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\fish.blend"
+            }
+        },
+        "266": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\fish.obj"
+            }
+        },
+        "271": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\fish.3ds"
+            }
+        },
+        "288": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "289": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "290": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "348": {
+            "link": {
+                "name": "texture_0",
+                "file": "models\\scene.gltf"
+            }
+        },
+        "349": {
+            "link": {
+                "name": "texture_1",
+                "file": "models\\scene.gltf"
+            }
+        },
+        "350": {
+            "link": {
+                "name": "texture_2",
+                "file": "models\\scene.gltf"
+            }
+        },
+        "412": {
+            "link": {
+                "name": "canvas-ui-up.png",
+                "file": "models\\textures\\canvas-ui-up.png"
+            },
+            "image": "411"
         }
     },
     "images": {
@@ -2157,6 +2702,49 @@
                 256,
                 256
             ]
+        },
+        "285": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "286": {
+            "link": {
+                "name": "image_1",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "287": {
+            "link": {
+                "name": "image_2",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "345": {
+            "link": {
+                "name": "image_0",
+                "file": "models\\scene.gltf"
+            }
+        },
+        "346": {
+            "link": {
+                "name": "image_1",
+                "file": "models\\scene.gltf"
+            }
+        },
+        "347": {
+            "link": {
+                "name": "image_2",
+                "file": "models\\scene.gltf"
+            }
+        },
+        "411": {
+            "link": {
+                "name": "canvas-ui-up.png",
+                "file": "models\\textures\\canvas-ui-up.png"
+            },
+            "stream": true
         }
     },
     "materials": {
@@ -2386,6 +2974,61 @@
                     1.0
                 ]
             }
+        },
+        "259": {
+            "link": {
+                "name": "Material",
+                "file": "models\\fish.blend"
+            }
+        },
+        "267": {
+            "link": {
+                "name": "Material",
+                "file": "models\\fish.obj"
+            }
+        },
+        "272": {
+            "link": {
+                "name": "Materialfish",
+                "file": "models\\fish.3ds"
+            }
+        },
+        "291": {
+            "link": {
+                "name": "Material.002",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "351": {
+            "link": {
+                "name": "Material.002",
+                "file": "models\\scene.gltf"
+            }
+        },
+        "417": {
+            "link": {
+                "name": "TeleportIndicator",
+                "file": "models\\teleport-indicator.glb"
+            },
+            "Phong": {
+                "diffuseColor": [
+                    0.6862745,
+                    0.6862676,
+                    0.6862676,
+                    1.0
+                ]
+            },
+            "pipeline": "405",
+            "Flat": {
+                "color": [
+                    0.8392156,
+                    0.8392072,
+                    0.8392072,
+                    1.0
+                ],
+                "flatTexture": "412"
+            },
+            "name": "CanvasUI"
         }
     },
     "shaders": {
@@ -2631,7 +3274,20 @@
             }
         }
     },
-    "animations": {},
+    "animations": {
+        "343": {
+            "link": {
+                "name": "ArmatureAction",
+                "file": "models\\blue_powder_tang.glb"
+            }
+        },
+        "403": {
+            "link": {
+                "name": "ArmatureAction",
+                "file": "models\\scene.gltf"
+            }
+        }
+    },
     "skins": {
         "133": {
             "link": {
@@ -2700,6 +3356,63 @@
                 "192",
                 "193"
             ]
+        },
+        "293": {
+            "link": {
+                "name": "skin_0",
+                "file": "models\\blue_powder_tang.glb"
+            },
+            "joints": [
+                "299",
+                "300",
+                "301",
+                "302",
+                "303",
+                "304",
+                "305",
+                "306",
+                "307",
+                "308",
+                "309",
+                "310",
+                "311",
+                "312",
+                "313",
+                "314",
+                "315",
+                "316",
+                "317",
+                "318",
+                "319",
+                "320",
+                "321",
+                "322",
+                "323",
+                "324",
+                "325",
+                "326",
+                "327",
+                "328",
+                "329",
+                "330",
+                "331",
+                "332",
+                "333",
+                "334",
+                "335",
+                "336",
+                "337",
+                "338",
+                "339",
+                "340"
+            ]
+        },
+        "353": {
+            "link": {
+                "name": "skin_0",
+                "file": "models\\scene.gltf"
+            },
+            "joints": []
         }
     },
     "pipelines": {
@@ -2813,6 +3526,16 @@
                 "name": "TileFeedback",
                 "file": "default"
             }
+        },
+        "405": {
+            "link": {
+                "name": "Flat Opaque Textured",
+                "file": "default"
+            },
+            "name": "UI",
+            "features": {
+                "ALPHA_MASKED": false
+            }
         }
     },
     "files": {
@@ -2838,6 +3561,30 @@
         },
         "255": {
             "fileName": "models/teleport-indicator.glb",
+            "importerName": ""
+        },
+        "263": {
+            "fileName": "models/fish.blend",
+            "importerName": ""
+        },
+        "270": {
+            "fileName": "models/fish.obj",
+            "importerName": ""
+        },
+        "275": {
+            "fileName": "models/fish.3ds",
+            "importerName": ""
+        },
+        "344": {
+            "fileName": "models/blue_powder_tang.glb",
+            "importerName": ""
+        },
+        "404": {
+            "fileName": "models/scene.gltf",
+            "importerName": ""
+        },
+        "413": {
+            "fileName": "models/textures/canvas-ui-up.png",
             "importerName": ""
         }
     },
