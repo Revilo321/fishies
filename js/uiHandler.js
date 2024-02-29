@@ -9,6 +9,7 @@ export class UIHandler extends Component {
       ['simple', 'buttons', 'scrolling', 'images', 'input-text'],
       'simple'
     ),
+    header: Property.string('Test'),
   }
 
   static onRegister(engine) {
@@ -75,13 +76,11 @@ export class UIHandler extends Component {
         height: 70,
       },
     }
-
     const content = {
-      header: 'Header',
+      header: this.header,
       main: 'This is the main text',
       footer: 'Footer',
     }
-
     this.ui = new CanvasUI(content, config, this.object, this.engine)
     this.ui.update()
     let ui = this.ui

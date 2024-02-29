@@ -9,8 +9,8 @@ export class LogOnClick extends Component {
 
   static Properties = {
     vrCamera: Property.object(),
-    message: Property.string('It was clicked!'),
-    infoTextObject: Property.object(),
+    title: Property.string(),
+    description: Property.string(),
     infoBox: Property.object(),
   }
 
@@ -22,25 +22,29 @@ export class LogOnClick extends Component {
   start() {
     this.active = false
     const target = this.object.getComponent('cursor-target')
-
-    if (this.infoTextObject) {
-      this.informationText = this.infoTextObject.getComponent('text')
+    this.infoTitle = this.infoBox.children[0]
+    this.infoDescription = this.infoBox.children[1]
+    if (this.infoTitle && this.infoDescription) {
+      this.titleText = this.infoTitle.getComponent('text')
+      this.descriptionText = this.infoDescription.getComponent('text')
     }
-
-    this.infoTextObject.active = this.active
+    this.infoTitle.active = this.active
+    this.infoDescription.active = this.active
     this.infoBox.active = this.active
     target.addClickFunction(this.onClick.bind(this))
   }
 
   onClick() {
     this.active = !this.active
-    this.infoTextObject.active = this.active
-    this.infoBox.active = this.active
-
-    if (this.active && this.informationText) {
-      this.informationText.text = this.message
+    if (this.active && this.titleText) {
+      this.texts = this.description.split('\\n')
+      this.titleText.text = this.title
+      this.descriptionText.text = this.texts.join('\n')
       this.positionInfoBoxInFrontOfLeftEye()
     }
+    this.infoTitle.active = this.active
+    this.infoDescription.active = this.active
+    this.infoBox.active = this.active
   }
 
   positionInfoBoxInFrontOfLeftEye() {

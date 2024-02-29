@@ -23,7 +23,6 @@ import {TeleportComponent} from '@wonderlandengine/components';
 import {VrModeActiveSwitch} from '@wonderlandengine/components';
 import {LogOnClick} from './LogOnClick.js';
 import {ButtonComponent} from './button.js';
-import {UIHandler} from './uiHandler.js';
 /* wle:auto-imports:end */
 
 import {loadRuntime} from '@wonderlandengine/api';
@@ -98,7 +97,6 @@ engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(LogOnClick);
 engine.registerComponent(ButtonComponent);
-engine.registerComponent(UIHandler);
 /* wle:auto-register:end */
 
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {

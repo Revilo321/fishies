@@ -46,9 +46,9 @@
                 }
             ],
             "translation": [
-                -0.1778643,
-                -0.0406923,
-                -0.0623005
+                -0.1778642,
+                -0.0406922,
+                -0.0623004
             ],
             "rotation": [
                 -0.7072563,
@@ -60,55 +60,6 @@
                 4.0,
                 4.0,
                 4.0
-            ]
-        },
-        "16": {
-            "name": "Cube",
-            "components": [
-                {
-                    "type": "mesh",
-                    "mesh": {
-                        "mesh": "8",
-                        "material": "22"
-                    }
-                },
-                {
-                    "type": "collision",
-                    "collision": {
-                        "sphere": {
-                            "radius": 0.8
-                        }
-                    }
-                },
-                {
-                    "type": "cursor-target"
-                },
-                {
-                    "type": "log-on-click",
-                    "log-on-click": {
-                        "infoBoxName": "Information",
-                        "infoTextObject": "257",
-                        "message": "This is text",
-                        "infoBox": "256",
-                        "vrCamera": "18"
-                    }
-                }
-            ],
-            "translation": [
-                3.2405128,
-                0.4358609,
-                3.1588444
-            ],
-            "rotation": [
-                0.0,
-                0.0,
-                0.0,
-                1.0
-            ],
-            "scaling": [
-                0.5,
-                0.5,
-                0.5
             ]
         },
         "17": {
@@ -1462,9 +1413,9 @@
                 }
             ],
             "translation": [
-                -2.5000009,
-                1.2000002,
-                0.0
+                -0.7937538,
+                1.1475504,
+                -2.0901155
             ],
             "rotation": [
                 0.5002122,
@@ -1473,9 +1424,9 @@
                 0.8659028
             ],
             "scaling": [
-                0.2624999,
-                0.1312497,
-                0.2624814
+                0.2624998,
+                0.1312496,
+                0.2624813
             ]
         },
         "196": {
@@ -1862,7 +1813,7 @@
                     "type": "mesh",
                     "mesh": {
                         "mesh": "7",
-                        "material": "202"
+                        "material": "272"
                     }
                 }
             ],
@@ -1884,11 +1835,16 @@
             ]
         },
         "257": {
-            "name": "Information",
+            "name": "Title",
             "parent": "256",
             "components": [
                 {
-                    "type": "text"
+                    "type": "text",
+                    "text": {
+                        "text": "Test",
+                        "lineSpacing": 1.2,
+                        "characterSpacing": 0.0
+                    }
                 }
             ],
             "translation": [
@@ -1903,22 +1859,10 @@
                 1.0
             ],
             "scaling": [
-                1.7935272,
-                1.6299999,
+                1.5939999,
+                1.4299999,
                 0.9299997
             ]
-        },
-        "262": {
-            "link": {
-                "name": "Camera",
-                "file": "models\\fish.blend"
-            }
-        },
-        "283": {
-            "link": {
-                "name": "Camera",
-                "file": "models\\fish.blend"
-            }
         },
         "294": {
             "link": {
@@ -1926,9 +1870,9 @@
                 "file": "models\\blue_powder_tang.glb"
             },
             "translation": [
-                2.3157479,
-                1.4933917,
-                -2.0175378
+                -0.2588906,
+                2.3019118,
+                -3.7997148
             ],
             "rotation": [
                 -0.7071056,
@@ -1937,9 +1881,9 @@
                 0.7071079
             ],
             "scaling": [
-                0.4,
-                0.3999255,
-                0.3999255
+                0.001,
+                0.001,
+                0.001
             ],
             "components": [
                 {
@@ -1962,7 +1906,9 @@
                         "vrCamera": "18",
                         "infoTextObject": "257",
                         "infoBox": "256",
-                        "message": "This is a Paracanthurus. A very known fish from Nemo, you may remember it as Dory"
+                        "message": "This is a Paracanthurus.\\n A very known fish from Nemo, you may remember it as Dory",
+                        "informationPanel": "408",
+                        "title": "Dette er en titel"
                     }
                 }
             ]
@@ -2345,9 +2291,9 @@
                 }
             ],
             "translation": [
-                0.2931754,
+                0.2931753,
                 1.0987689,
-                -0.5845327
+                -0.5845326
             ],
             "rotation": [
                 0.0,
@@ -2369,19 +2315,21 @@
             "parent": "298"
         },
         "408": {
-            "name": "Panel",
+            "name": "Information Panel",
             "components": [
                 {
                     "type": "mesh",
                     "mesh": {
                         "mesh": "7",
                         "material": "417"
-                    }
+                    },
+                    "active": true
                 },
                 {
                     "type": "uiHandler",
                     "uiHandler": {
-                        "panel": "simple"
+                        "panel": "simple",
+                        "header": "Test"
                     },
                     "active": true
                 },
@@ -2390,22 +2338,112 @@
                 }
             ],
             "translation": [
-                -2.8175165,
-                1.3179996,
-                0.058579
+                -5.0383567,
+                3.1459956,
+                -2.8951375
             ],
             "rotation": [
-                -0.1736482,
+                -0.173649,
                 0.0,
                 0.0,
-                0.9848077
+                0.9848076
             ],
             "scaling": [
-                0.5,
-                0.5,
-                0.0099999
+                0.4999999,
+                0.5000001,
+                0.0099998
             ],
             "parent": null
+        },
+        "434": {
+            "link": {
+                "name": "BlueTang",
+                "file": "models\\Bluetang.obj"
+            },
+            "scaling": [
+                1.0335134,
+                1.0385792,
+                1.0346591
+            ],
+            "translation": [
+                1.2673919,
+                1.3277609,
+                2.6826429
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                null,
+                null,
+                null,
+                {
+                    "type": "collision",
+                    "collision": {
+                        "sphere": {
+                            "radius": 0.5
+                        }
+                    }
+                },
+                {
+                    "type": "cursor-target"
+                },
+                {
+                    "type": "log-on-click",
+                    "log-on-click": {
+                        "vrCamera": "18",
+                        "infoTextObject": "256",
+                        "infoBox": "256",
+                        "title": "Paletkirurgfisk",
+                        "description": "Også kendt fra find Nemo \\n Den er blå og meget flot"
+                    }
+                }
+            ]
+        },
+        "436": {
+            "link": {
+                "name": "ClownFish",
+                "file": "models\\ClownFish.obj"
+            },
+            "scaling": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "translation": [
+                1.822694,
+                0.8635725,
+                -0.1613219
+            ],
+            "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "components": [
+                null,
+                null,
+                null,
+                {
+                    "type": "collision"
+                }
+            ]
+        },
+        "437": {
+            "name": "description",
+            "parent": "256",
+            "components": [
+                {
+                    "type": "text",
+                    "text": {
+                        "text": ""
+                    }
+                }
+            ]
         }
     },
     "meshes": {
@@ -2572,6 +2610,42 @@
             "link": {
                 "name": "Object_0",
                 "file": "models\\scene.gltf"
+            }
+        },
+        "421": {
+            "link": {
+                "name": "mesh_0",
+                "file": "models\\ClownFish.obj"
+            }
+        },
+        "422": {
+            "link": {
+                "name": "mesh_1",
+                "file": "models\\ClownFish.obj"
+            }
+        },
+        "423": {
+            "link": {
+                "name": "mesh_2",
+                "file": "models\\ClownFish.obj"
+            }
+        },
+        "431": {
+            "link": {
+                "name": "mesh_0",
+                "file": "models\\Bluetang.obj"
+            }
+        },
+        "432": {
+            "link": {
+                "name": "mesh_1",
+                "file": "models\\Bluetang.obj"
+            }
+        },
+        "433": {
+            "link": {
+                "name": "mesh_2",
+                "file": "models\\Bluetang.obj"
             }
         }
     },
@@ -3029,6 +3103,42 @@
                 "flatTexture": "412"
             },
             "name": "CanvasUI"
+        },
+        "418": {
+            "link": {
+                "name": "ClownFishOrange",
+                "file": "models\\ClownFish.obj"
+            }
+        },
+        "419": {
+            "link": {
+                "name": "ClownFishWhite",
+                "file": "models\\ClownFish.obj"
+            }
+        },
+        "420": {
+            "link": {
+                "name": "ClownFishBlack",
+                "file": "models\\ClownFish.obj"
+            }
+        },
+        "428": {
+            "link": {
+                "name": "DoryBlue",
+                "file": "models\\Bluetang.obj"
+            }
+        },
+        "429": {
+            "link": {
+                "name": "DoryYellow",
+                "file": "models\\Bluetang.obj"
+            }
+        },
+        "430": {
+            "link": {
+                "name": "DoryBlack",
+                "file": "models\\Bluetang.obj"
+            }
         }
     },
     "shaders": {
@@ -3585,6 +3695,14 @@
         },
         "413": {
             "fileName": "models/textures/canvas-ui-up.png",
+            "importerName": ""
+        },
+        "425": {
+            "fileName": "models/ClownFish.obj",
+            "importerName": ""
+        },
+        "435": {
+            "fileName": "models/Bluetang.obj",
             "importerName": ""
         }
     },
