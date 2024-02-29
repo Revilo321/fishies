@@ -15475,7 +15475,7 @@ var LogOnClick = class extends Component {
   }
   onClick() {
     this.active = !this.active;
-    if (this.active && this.titleText) {
+    if (this.active) {
       this.texts = this.description.split("\\n");
       this.titleText.text = this.title;
       this.descriptionText.text = this.texts.join("\n");
