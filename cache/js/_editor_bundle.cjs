@@ -51,9 +51,9 @@
     return method;
   };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/howler/dist/howler.js
+  // node_modules/howler/dist/howler.js
   var require_howler = __commonJS({
-    "C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/howler/dist/howler.js"(exports) {
+    "node_modules/howler/dist/howler.js"(exports) {
       (function() {
         "use strict";
         var HowlerGlobal2 = function() {
@@ -2263,9 +2263,9 @@
     }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/earcut/src/earcut.js
+  // node_modules/earcut/src/earcut.js
   var require_earcut = __commonJS({
-    "C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/earcut/src/earcut.js"(exports, module) {
+    "node_modules/earcut/src/earcut.js"(exports, module) {
       "use strict";
       module.exports = earcut2;
       module.exports.default = earcut2;
@@ -2729,7 +2729,7 @@
     }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/index.js
+  // node_modules/@wonderlandengine/components/dist/index.js
   var dist_exports = {};
   __export(dist_exports, {
     ARCamera8thwall: () => ARCamera8thwall,
@@ -2760,7 +2760,7 @@
     isPointWorldOnXRPlanePolygon: () => isPointWorldOnXRPlanePolygon
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/property.js
+  // node_modules/@wonderlandengine/api/dist/property.js
   var Type;
   (function(Type2) {
     Type2[Type2["Native"] = 1] = "Native";
@@ -2857,7 +2857,7 @@
     }
   };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/decorators.js
+  // node_modules/@wonderlandengine/api/dist/decorators.js
   function propertyDecorator(data) {
     return function(target, propertyKey) {
       const ctor = target.constructor;
@@ -2884,7 +2884,7 @@
     };
   }
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/object.js
+  // node_modules/@wonderlandengine/api/dist/utils/object.js
   function isString(value) {
     if (value === "")
       return true;
@@ -2896,7 +2896,7 @@
     return typeof value === "number" || value.constructor === Number;
   }
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/event.js
+  // node_modules/@wonderlandengine/api/dist/utils/event.js
   var TransactionType;
   (function(TransactionType2) {
     TransactionType2[TransactionType2["Addition"] = 1] = "Addition";
@@ -3240,7 +3240,7 @@
     }
   };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/wonderland.js
+  // node_modules/@wonderlandengine/api/dist/wonderland.js
   var __decorate = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -7272,7 +7272,7 @@
     }
   };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/bitset.js
+  // node_modules/@wonderlandengine/api/dist/utils/bitset.js
   function assert(bit) {
     if (bit >= 32) {
       throw new Error(`BitSet.enable(): Value ${bit} is over 31`);
@@ -7336,7 +7336,7 @@
     }
   };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/logger.js
+  // node_modules/@wonderlandengine/api/dist/utils/logger.js
   var LogLevel;
   (function(LogLevel2) {
     LogLevel2[LogLevel2["Info"] = 0] = "Info";
@@ -7405,7 +7405,7 @@
     }
   };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/wasm.js
+  // node_modules/@wonderlandengine/api/dist/wasm.js
   var _componentDefaults = /* @__PURE__ */ new Map([
     [Type.Bool, false],
     [Type.Int, 0],
@@ -8032,7 +8032,7 @@
   WASM.prototype._wl_physx_component_get_sleepOnActivate = requireRuntime1_1_5;
   WASM.prototype.webxr_offerSession = requireRuntime1_1_5;
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/8thwall-camera.js
+  // node_modules/@wonderlandengine/components/dist/8thwall-camera.js
   var ARCamera8thwall = class extends Component {
     /* 8thwall camera pipeline module name */
     name = "wonderland-engine-8thwall-camera";
@@ -8351,7 +8351,7 @@
   <button class="wall-error-overlay_button" onclick="window.location.reload()">Reload</button>
 </div>`;
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/utils/webxr.js
+  // node_modules/@wonderlandengine/components/dist/utils/webxr.js
   var tempVec = new Float32Array(3);
   var tempQuat = new Float32Array(4);
   function setXRRigidTransformLocal(o, transform) {
@@ -8369,7 +8369,7 @@
     o.translateLocal(tempVec);
   }
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/anchor.js
+  // node_modules/@wonderlandengine/components/dist/anchor.js
   var __decorate2 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -8538,7 +8538,7 @@
     property.string()
   ], Anchor.prototype, "uuid", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/cursor-target.js
+  // node_modules/@wonderlandengine/components/dist/cursor-target.js
   var CursorTarget = class extends Component {
     /** Emitter for events when the target is hovered */
     onHover = new Emitter();
@@ -8664,7 +8664,7 @@
   __publicField(CursorTarget, "TypeName", "cursor-target");
   __publicField(CursorTarget, "Properties", {});
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/common.js
+  // node_modules/gl-matrix/esm/common.js
   var EPSILON = 1e-6;
   var ARRAY_TYPE = typeof Float32Array !== "undefined" ? Float32Array : Array;
   var RANDOM = Math.random;
@@ -8678,7 +8678,7 @@
       return Math.sqrt(y);
     };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/mat3.js
+  // node_modules/gl-matrix/esm/mat3.js
   function create() {
     var out = new ARRAY_TYPE(9);
     if (ARRAY_TYPE != Float32Array) {
@@ -8695,7 +8695,7 @@
     return out;
   }
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/mat4.js
+  // node_modules/gl-matrix/esm/mat4.js
   var mat4_exports = {};
   __export(mat4_exports, {
     add: () => add,
@@ -9947,7 +9947,7 @@
   var mul = multiply;
   var sub = subtract;
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/quat.js
+  // node_modules/gl-matrix/esm/quat.js
   var quat_exports = {};
   __export(quat_exports, {
     add: () => add4,
@@ -9991,7 +9991,7 @@
     str: () => str3
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/vec3.js
+  // node_modules/gl-matrix/esm/vec3.js
   var vec3_exports = {};
   __export(vec3_exports, {
     add: () => add2,
@@ -10375,7 +10375,7 @@
     };
   }();
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/vec4.js
+  // node_modules/gl-matrix/esm/vec4.js
   function create4() {
     var out = new ARRAY_TYPE(4);
     if (ARRAY_TYPE != Float32Array) {
@@ -10511,7 +10511,7 @@
     };
   }();
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/quat.js
+  // node_modules/gl-matrix/esm/quat.js
   function create5() {
     var out = new ARRAY_TYPE(4);
     if (ARRAY_TYPE != Float32Array) {
@@ -10804,7 +10804,7 @@
     };
   }();
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/quat2.js
+  // node_modules/gl-matrix/esm/quat2.js
   var quat2_exports = {};
   __export(quat2_exports, {
     add: () => add5,
@@ -11215,7 +11215,7 @@
     return Math.abs(a0 - b0) <= EPSILON * Math.max(1, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= EPSILON * Math.max(1, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= EPSILON * Math.max(1, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= EPSILON * Math.max(1, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= EPSILON * Math.max(1, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= EPSILON * Math.max(1, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= EPSILON * Math.max(1, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= EPSILON * Math.max(1, Math.abs(a7), Math.abs(b7));
   }
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/hit-test-location.js
+  // node_modules/@wonderlandengine/components/dist/hit-test-location.js
   var __decorate3 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -11319,7 +11319,7 @@
     property.bool(true)
   ], HitTestLocation.prototype, "scaleObject", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/cursor.js
+  // node_modules/@wonderlandengine/components/dist/cursor.js
   var __decorate4 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -11762,7 +11762,7 @@
     property.bool(false)
   ], Cursor.prototype, "useWebXRHitTest", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/debug-object.js
+  // node_modules/@wonderlandengine/components/dist/debug-object.js
   var __decorate5 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -11791,7 +11791,7 @@
     property.object()
   ], DebugObject.prototype, "obj", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/device-orientation-look.js
+  // node_modules/@wonderlandengine/components/dist/device-orientation-look.js
   function quatFromEulerYXZ(out, x, y, z) {
     const c1 = Math.cos(x / 2);
     const c2 = Math.cos(y / 2);
@@ -11842,7 +11842,7 @@
   __publicField(DeviceOrientationLook, "TypeName", "device-orientation-look");
   __publicField(DeviceOrientationLook, "Properties", {});
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/finger-cursor.js
+  // node_modules/@wonderlandengine/components/dist/finger-cursor.js
   var FingerCursor = class extends Component {
     init() {
       this.lastTarget = null;
@@ -11878,7 +11878,7 @@
   __publicField(FingerCursor, "TypeName", "finger-cursor");
   __publicField(FingerCursor, "Properties", {});
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/fixed-foveation.js
+  // node_modules/@wonderlandengine/components/dist/fixed-foveation.js
   var FixedFoveation = class extends Component {
     start() {
       this.onSessionStartCallback = this.setFixedFoveation.bind(this);
@@ -11899,7 +11899,7 @@
     fixedFoveation: { type: Type.Float, default: 0.5 }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/hand-tracking.js
+  // node_modules/@wonderlandengine/components/dist/hand-tracking.js
   var __decorate6 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -12097,7 +12097,7 @@
     property.object()
   ], HandTracking.prototype, "controllerToDeactivate", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/howler-audio-listener.js
+  // node_modules/@wonderlandengine/components/dist/howler-audio-listener.js
   var import_howler = __toESM(require_howler(), 1);
   var HowlerAudioListener = class extends Component {
     init() {
@@ -12121,7 +12121,7 @@
     spatial: { type: Type.Bool, default: true }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/howler-audio-source.js
+  // node_modules/@wonderlandengine/components/dist/howler-audio-source.js
   var import_howler2 = __toESM(require_howler(), 1);
   var HowlerAudioSource = class extends Component {
     start() {
@@ -12182,7 +12182,7 @@
     src: { type: Type.String, default: "" }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/utils/utils.js
+  // node_modules/@wonderlandengine/components/dist/utils/utils.js
   function setFirstMaterialTexture(mat, texture, customTextureProperty) {
     if (customTextureProperty !== "auto") {
       mat[customTextureProperty] = texture;
@@ -12211,7 +12211,7 @@
     return false;
   }
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/image-texture.js
+  // node_modules/@wonderlandengine/components/dist/image-texture.js
   var ImageTexture = class extends Component {
     start() {
       if (!this.material) {
@@ -12235,7 +12235,7 @@
     textureProperty: Property.string("auto")
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/mouse-look.js
+  // node_modules/@wonderlandengine/components/dist/mouse-look.js
   var __decorate7 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -12351,7 +12351,7 @@
     property.bool(false)
   ], MouseLookComponent.prototype, "pointerLockOnClick", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/player-height.js
+  // node_modules/@wonderlandengine/components/dist/player-height.js
   var __decorate8 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -12399,7 +12399,7 @@
     property.float(1.75)
   ], PlayerHeight.prototype, "height", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/target-framerate.js
+  // node_modules/@wonderlandengine/components/dist/target-framerate.js
   var TargetFramerate = class extends Component {
     start() {
       this.onSessionStartCallback = this.setTargetFramerate.bind(this);
@@ -12423,7 +12423,7 @@
     framerate: { type: Type.Float, default: 90 }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/teleport.js
+  // node_modules/@wonderlandengine/components/dist/teleport.js
   var TeleportComponent = class extends Component {
     init() {
       this._prevThumbstickAxis = new Float32Array(2);
@@ -12646,7 +12646,7 @@
     maxDistance: { type: Type.Float, default: 100 }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/trail.js
+  // node_modules/@wonderlandengine/components/dist/trail.js
   var direction = vec3_exports.create();
   var offset = vec3_exports.create();
   var normal = vec3_exports.create();
@@ -12763,7 +12763,7 @@
     resetThreshold: { type: Type.Float, default: 0.5 }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/two-joint-ik-solver.js
+  // node_modules/@wonderlandengine/components/dist/two-joint-ik-solver.js
   function clamp2(v, a, b) {
     return Math.max(a, Math.min(v, b));
   }
@@ -12865,7 +12865,7 @@
     helper: Property.object()
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/video-texture.js
+  // node_modules/@wonderlandengine/components/dist/video-texture.js
   var VideoTexture = class extends Component {
     init() {
       if (!this.material) {
@@ -12940,7 +12940,7 @@
     textureProperty: Property.string("auto")
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/vr-mode-active-switch.js
+  // node_modules/@wonderlandengine/components/dist/vr-mode-active-switch.js
   var VrModeActiveSwitch = class extends Component {
     start() {
       this.components = [];
@@ -12992,7 +12992,7 @@
     affectChildren: { type: Type.Bool, default: true }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/plane-detection.js
+  // node_modules/@wonderlandengine/components/dist/plane-detection.js
   var import_earcut = __toESM(require_earcut(), 1);
   var __decorate9 = function(decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -13195,7 +13195,7 @@
     property.int()
   ], PlaneDetection.prototype, "collisionMask", void 0);
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/vrm.js
+  // node_modules/@wonderlandengine/components/dist/vrm.js
   var VRM_ROLL_AXES = {
     X: [1, 0, 0],
     Y: [0, 1, 0],
@@ -13740,7 +13740,7 @@
     lookAtTarget: { type: Type.Object }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/wasd-controls.js
+  // node_modules/@wonderlandengine/components/dist/wasd-controls.js
   var _direction = new Float32Array(3);
   var WasdControlsComponent = class extends Component {
     init() {
@@ -13808,7 +13808,7 @@
     headObject: { type: Type.Object }
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/CanvasUI.js
+  // js/CanvasUI.js
   var CanvasUI_exports = {};
   __export(CanvasUI_exports, {
     CanvasUI: () => CanvasUI
@@ -14966,7 +14966,7 @@
     }
   };
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/LogOnClick.js
+  // js/LogOnClick.js
   var LogOnClick_exports = {};
   __export(LogOnClick_exports, {
     LogOnClick: () => LogOnClick
@@ -15025,7 +15025,7 @@
     infoBox: Property.object()
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/button.js
+  // js/button.js
   var button_exports = {};
   __export(button_exports, {
     ButtonComponent: () => ButtonComponent,
@@ -15109,7 +15109,7 @@
     hoverMaterial: Property.material()
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/uiHandler.js
+  // js/uiHandler.js
   var uiHandler_exports = {};
   __export(uiHandler_exports, {
     UIHandler: () => UIHandler
@@ -15436,7 +15436,7 @@
     header: Property.string("Test")
   });
 
-  // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/cache/js/_editor_index.js
+  // cache/js/_editor_index.js
   _registerEditor(dist_exports);
   _registerEditor(CanvasUI_exports);
   _registerEditor(LogOnClick_exports);

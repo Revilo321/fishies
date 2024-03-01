@@ -5731,6 +5731,48 @@
                 "name": "Em",
                 "file": "models\\VRScene.gltf"
             }
+        },
+        "1520": {
+            "link": {
+                "name": "phong1",
+                "file": "models\\aquarium-scene.gltf"
+            }
+        },
+        "1521": {
+            "link": {
+                "name": "phongE1",
+                "file": "models\\aquarium-scene.gltf"
+            }
+        },
+        "1522": {
+            "link": {
+                "name": "lambert2",
+                "file": "models\\aquarium-scene.gltf"
+            }
+        },
+        "1523": {
+            "link": {
+                "name": "blinn1",
+                "file": "models\\aquarium-scene.gltf"
+            }
+        },
+        "1524": {
+            "link": {
+                "name": "lambert3",
+                "file": "models\\aquarium-scene.gltf"
+            }
+        },
+        "1525": {
+            "link": {
+                "name": "phong2",
+                "file": "models\\aquarium-scene.gltf"
+            }
+        },
+        "1526": {
+            "link": {
+                "name": "lambert4",
+                "file": "models\\aquarium-scene.gltf"
+            }
         }
     },
     "shaders": {
@@ -6362,6 +6404,10 @@
         },
         "1505": {
             "fileName": "models/VRScene.gltf",
+            "importerName": ""
+        },
+        "1653": {
+            "fileName": "models/aquarium-scene.gltf",
             "importerName": ""
         }
     },
