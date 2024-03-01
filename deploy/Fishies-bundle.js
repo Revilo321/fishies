@@ -15508,85 +15508,6 @@ __publicField(LogOnClick, "Properties", {
   infoBox: Property.object()
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/button.js
-function hapticFeedback(object, strength, duration) {
-  const input = object.getComponent(InputComponent);
-  if (input && input.xrInputSource) {
-    const gamepad = input.xrInputSource.gamepad;
-    if (gamepad && gamepad.hapticActuators)
-      gamepad.hapticActuators[0].pulse(strength, duration);
-  }
-}
-var ButtonComponent = class extends Component {
-  static onRegister(engine2) {
-    engine2.registerComponent(HowlerAudioSource);
-    engine2.registerComponent(CursorTarget);
-  }
-  /* Position to return to when "unpressing" the button */
-  returnPos = new Float32Array(3);
-  start() {
-    this.mesh = this.buttonMeshObject.getComponent(MeshComponent);
-    this.defaultMaterial = this.mesh.material;
-    this.buttonMeshObject.getTranslationLocal(this.returnPos);
-    this.target = this.object.getComponent(CursorTarget) || this.object.addComponent(CursorTarget);
-    this.soundClick = this.object.addComponent(HowlerAudioSource, {
-      src: "sfx/click.wav",
-      spatial: true
-    });
-    this.soundUnClick = this.object.addComponent(HowlerAudioSource, {
-      src: "sfx/unclick.wav",
-      spatial: true
-    });
-  }
-  onActivate() {
-    this.target.onHover.add(this.onHover);
-    this.target.onUnhover.add(this.onUnhover);
-    this.target.onDown.add(this.onDown);
-    this.target.onUp.add(this.onUp);
-  }
-  onDeactivate() {
-    this.target.onHover.remove(this.onHover);
-    this.target.onUnhover.remove(this.onUnhover);
-    this.target.onDown.remove(this.onDown);
-    this.target.onUp.remove(this.onUp);
-  }
-  /* Called by 'cursor-target' */
-  onHover = (_, cursor) => {
-    this.mesh.material = this.hoverMaterial;
-    if (cursor.type === "finger-cursor") {
-      this.onDown(_, cursor);
-    }
-    hapticFeedback(cursor.object, 0.5, 50);
-  };
-  /* Called by 'cursor-target' */
-  onDown = (_, cursor) => {
-    this.soundClick.play();
-    this.buttonMeshObject.translate([0, -0.1, 0]);
-    hapticFeedback(cursor.object, 1, 20);
-  };
-  /* Called by 'cursor-target' */
-  onUp = (_, cursor) => {
-    this.soundUnClick.play();
-    this.buttonMeshObject.setTranslationLocal(this.returnPos);
-    hapticFeedback(cursor.object, 0.7, 20);
-  };
-  /* Called by 'cursor-target' */
-  onUnhover = (_, cursor) => {
-    this.mesh.material = this.defaultMaterial;
-    if (cursor.type === "finger-cursor") {
-      this.onUp(_, cursor);
-    }
-    hapticFeedback(cursor.object, 0.3, 50);
-  };
-};
-__publicField(ButtonComponent, "TypeName", "button");
-__publicField(ButtonComponent, "Properties", {
-  /** Object that has the button's mesh attached */
-  buttonMeshObject: Property.object(),
-  /** Material to apply when the user hovers the button */
-  hoverMaterial: Property.material()
-});
-
 // C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/index.js
 var Constants = {
   ProjectName: "Fishies",
@@ -15643,7 +15564,6 @@ engine.registerComponent(PlayerHeight);
 engine.registerComponent(TeleportComponent);
 engine.registerComponent(VrModeActiveSwitch);
 engine.registerComponent(LogOnClick);
-engine.registerComponent(ButtonComponent);
 engine.scene.load(`${Constants.ProjectName}.bin`).catch((e) => {
   console.error(e);
   window.alert(`Failed to load ${Constants.ProjectName}.bin:`, e);
