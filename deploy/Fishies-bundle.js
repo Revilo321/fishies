@@ -50,9 +50,9 @@ var __privateMethod = (obj, member, method) => {
   return method;
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/howler/dist/howler.js
+// node_modules/howler/dist/howler.js
 var require_howler = __commonJS({
-  "C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/howler/dist/howler.js"(exports) {
+  "node_modules/howler/dist/howler.js"(exports) {
     (function() {
       "use strict";
       var HowlerGlobal2 = function() {
@@ -2262,9 +2262,9 @@ var require_howler = __commonJS({
   }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/earcut/src/earcut.js
+// node_modules/earcut/src/earcut.js
 var require_earcut = __commonJS({
-  "C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/earcut/src/earcut.js"(exports, module) {
+  "node_modules/earcut/src/earcut.js"(exports, module) {
     "use strict";
     module.exports = earcut2;
     module.exports.default = earcut2;
@@ -2728,7 +2728,7 @@ var require_earcut = __commonJS({
   }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/index.js
+// node_modules/@wonderlandengine/api/dist/index.js
 var dist_exports = {};
 __export(dist_exports, {
   APIVersion: () => APIVersion,
@@ -2790,7 +2790,7 @@ __export(dist_exports, {
   math: () => math
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/wasm-feature-detect/dist/esm/index.js
+// node_modules/wasm-feature-detect/dist/esm/index.js
 var simd = async () => WebAssembly.validate(new Uint8Array([0, 97, 115, 109, 1, 0, 0, 0, 1, 5, 1, 96, 0, 1, 123, 3, 2, 1, 0, 10, 10, 1, 8, 0, 65, 0, 253, 15, 253, 98, 11]));
 var threads = () => (async (e) => {
   try {
@@ -2800,7 +2800,7 @@ var threads = () => (async (e) => {
   }
 })(new Uint8Array([0, 97, 115, 109, 1, 0, 0, 0, 1, 4, 1, 96, 0, 0, 3, 2, 1, 0, 5, 4, 1, 3, 1, 1, 10, 11, 1, 9, 0, 65, 0, 254, 16, 2, 0, 26, 11]));
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/property.js
+// node_modules/@wonderlandengine/api/dist/property.js
 var Type;
 (function(Type2) {
   Type2[Type2["Native"] = 1] = "Native";
@@ -2897,7 +2897,7 @@ var Property = {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/decorators.js
+// node_modules/@wonderlandengine/api/dist/decorators.js
 function propertyDecorator(data) {
   return function(target, propertyKey) {
     const ctor = target.constructor;
@@ -2924,7 +2924,7 @@ for (const name in Property) {
   };
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/object.js
+// node_modules/@wonderlandengine/api/dist/utils/object.js
 function isString(value) {
   if (value === "")
     return true;
@@ -2936,7 +2936,7 @@ function isNumber(value) {
   return typeof value === "number" || value.constructor === Number;
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/event.js
+// node_modules/@wonderlandengine/api/dist/utils/event.js
 var TransactionType;
 (function(TransactionType2) {
   TransactionType2[TransactionType2["Addition"] = 1] = "Addition";
@@ -3280,7 +3280,7 @@ var RetainEmitter = class extends Emitter {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/wonderland.js
+// node_modules/@wonderlandengine/api/dist/wonderland.js
 var __decorate = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -7575,7 +7575,7 @@ var XR = class {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/fetch.js
+// node_modules/@wonderlandengine/api/dist/utils/fetch.js
 function fetchWithProgress(path, onProgress) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -7603,7 +7603,7 @@ function getBaseUrl(url) {
   return url.substring(0, url.lastIndexOf("/"));
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/misc.js
+// node_modules/@wonderlandengine/api/dist/utils/misc.js
 function timeout(time) {
   return new Promise((res) => setTimeout(res, time));
 }
@@ -7611,7 +7611,7 @@ function clamp(val, min2, max2) {
   return Math.max(Math.min(max2, val), min2);
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/scene.js
+// node_modules/@wonderlandengine/api/dist/scene.js
 var MAGIC_BIN = "WLEV";
 var Scene = class {
   /** Called before rendering the scene */
@@ -8101,7 +8101,7 @@ var Scene = class {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/texture-manager.js
+// node_modules/@wonderlandengine/api/dist/texture-manager.js
 var TextureManager = class {
   /** Wonderland Engine instance. @hidden */
   _engine;
@@ -8216,7 +8216,7 @@ var TextureManager = class {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/engine.js
+// node_modules/@wonderlandengine/api/dist/engine.js
 function checkXRSupport() {
   if (!navigator.xr) {
     const isLocalhost = location.hostname === "localhost" || location.hostname === "127.0.0.1";
@@ -8839,7 +8839,7 @@ var WonderlandEngine = class {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/bitset.js
+// node_modules/@wonderlandengine/api/dist/utils/bitset.js
 function assert(bit) {
   if (bit >= 32) {
     throw new Error(`BitSet.enable(): Value ${bit} is over 31`);
@@ -8903,7 +8903,7 @@ var BitSet = class {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/utils/logger.js
+// node_modules/@wonderlandengine/api/dist/utils/logger.js
 var LogLevel;
 (function(LogLevel2) {
   LogLevel2[LogLevel2["Info"] = 0] = "Info";
@@ -8972,7 +8972,7 @@ var Logger = class {
   }
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/wasm.js
+// node_modules/@wonderlandengine/api/dist/wasm.js
 var _componentDefaults = /* @__PURE__ */ new Map([
   [Type.Bool, false],
   [Type.Int, 0],
@@ -9599,7 +9599,7 @@ WASM.prototype._wl_physx_component_set_sleepOnActivate = requireRuntime1_1_5;
 WASM.prototype._wl_physx_component_get_sleepOnActivate = requireRuntime1_1_5;
 WASM.prototype.webxr_offerSession = requireRuntime1_1_5;
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/version.js
+// node_modules/@wonderlandengine/api/dist/version.js
 var APIVersion = {
   major: 1,
   minor: 1,
@@ -9607,7 +9607,7 @@ var APIVersion = {
   rc: 0
 };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/api/dist/index.js
+// node_modules/@wonderlandengine/api/dist/index.js
 var LOADING_SCREEN_PATH = "WonderlandRuntime-LoadingScreen.bin";
 function loadScript(scriptURL) {
   return new Promise((res, rej) => {
@@ -9756,7 +9756,7 @@ async function loadRuntime(runtime, options = {}) {
   return engine2;
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/8thwall-camera.js
+// node_modules/@wonderlandengine/components/dist/8thwall-camera.js
 var ARCamera8thwall = class extends Component {
   /* 8thwall camera pipeline module name */
   name = "wonderland-engine-8thwall-camera";
@@ -10075,7 +10075,7 @@ var runtimeErrorOverlay = `
   <button class="wall-error-overlay_button" onclick="window.location.reload()">Reload</button>
 </div>`;
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/utils/webxr.js
+// node_modules/@wonderlandengine/components/dist/utils/webxr.js
 var tempVec = new Float32Array(3);
 var tempQuat = new Float32Array(4);
 function setXRRigidTransformLocal(o, transform) {
@@ -10093,7 +10093,7 @@ function setXRRigidTransformLocal(o, transform) {
   o.translateLocal(tempVec);
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/anchor.js
+// node_modules/@wonderlandengine/components/dist/anchor.js
 var __decorate2 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -10262,7 +10262,7 @@ __decorate2([
   property.string()
 ], Anchor.prototype, "uuid", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/cursor-target.js
+// node_modules/@wonderlandengine/components/dist/cursor-target.js
 var CursorTarget = class extends Component {
   /** Emitter for events when the target is hovered */
   onHover = new Emitter();
@@ -10388,7 +10388,7 @@ var CursorTarget = class extends Component {
 __publicField(CursorTarget, "TypeName", "cursor-target");
 __publicField(CursorTarget, "Properties", {});
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/common.js
+// node_modules/gl-matrix/esm/common.js
 var EPSILON = 1e-6;
 var ARRAY_TYPE = typeof Float32Array !== "undefined" ? Float32Array : Array;
 var RANDOM = Math.random;
@@ -10402,7 +10402,7 @@ if (!Math.hypot)
     return Math.sqrt(y);
   };
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/mat3.js
+// node_modules/gl-matrix/esm/mat3.js
 function create() {
   var out = new ARRAY_TYPE(9);
   if (ARRAY_TYPE != Float32Array) {
@@ -10419,7 +10419,7 @@ function create() {
   return out;
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/mat4.js
+// node_modules/gl-matrix/esm/mat4.js
 var mat4_exports = {};
 __export(mat4_exports, {
   add: () => add,
@@ -11671,7 +11671,7 @@ function equals(a, b) {
 var mul = multiply;
 var sub = subtract;
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/quat.js
+// node_modules/gl-matrix/esm/quat.js
 var quat_exports = {};
 __export(quat_exports, {
   add: () => add4,
@@ -11715,7 +11715,7 @@ __export(quat_exports, {
   str: () => str3
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/vec3.js
+// node_modules/gl-matrix/esm/vec3.js
 var vec3_exports = {};
 __export(vec3_exports, {
   add: () => add2,
@@ -12099,7 +12099,7 @@ var forEach = function() {
   };
 }();
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/vec4.js
+// node_modules/gl-matrix/esm/vec4.js
 function create4() {
   var out = new ARRAY_TYPE(4);
   if (ARRAY_TYPE != Float32Array) {
@@ -12235,7 +12235,7 @@ var forEach2 = function() {
   };
 }();
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/quat.js
+// node_modules/gl-matrix/esm/quat.js
 function create5() {
   var out = new ARRAY_TYPE(4);
   if (ARRAY_TYPE != Float32Array) {
@@ -12528,7 +12528,7 @@ var setAxes = function() {
   };
 }();
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/gl-matrix/esm/quat2.js
+// node_modules/gl-matrix/esm/quat2.js
 var quat2_exports = {};
 __export(quat2_exports, {
   add: () => add5,
@@ -12939,7 +12939,7 @@ function equals5(a, b) {
   return Math.abs(a0 - b0) <= EPSILON * Math.max(1, Math.abs(a0), Math.abs(b0)) && Math.abs(a1 - b1) <= EPSILON * Math.max(1, Math.abs(a1), Math.abs(b1)) && Math.abs(a2 - b2) <= EPSILON * Math.max(1, Math.abs(a2), Math.abs(b2)) && Math.abs(a3 - b3) <= EPSILON * Math.max(1, Math.abs(a3), Math.abs(b3)) && Math.abs(a4 - b4) <= EPSILON * Math.max(1, Math.abs(a4), Math.abs(b4)) && Math.abs(a5 - b5) <= EPSILON * Math.max(1, Math.abs(a5), Math.abs(b5)) && Math.abs(a6 - b6) <= EPSILON * Math.max(1, Math.abs(a6), Math.abs(b6)) && Math.abs(a7 - b7) <= EPSILON * Math.max(1, Math.abs(a7), Math.abs(b7));
 }
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/hit-test-location.js
+// node_modules/@wonderlandengine/components/dist/hit-test-location.js
 var __decorate3 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -13043,7 +13043,7 @@ __decorate3([
   property.bool(true)
 ], HitTestLocation.prototype, "scaleObject", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/cursor.js
+// node_modules/@wonderlandengine/components/dist/cursor.js
 var __decorate4 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -13486,7 +13486,7 @@ __decorate4([
   property.bool(false)
 ], Cursor.prototype, "useWebXRHitTest", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/debug-object.js
+// node_modules/@wonderlandengine/components/dist/debug-object.js
 var __decorate5 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -13515,7 +13515,7 @@ __decorate5([
   property.object()
 ], DebugObject.prototype, "obj", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/finger-cursor.js
+// node_modules/@wonderlandengine/components/dist/finger-cursor.js
 var FingerCursor = class extends Component {
   init() {
     this.lastTarget = null;
@@ -13551,7 +13551,7 @@ var FingerCursor = class extends Component {
 __publicField(FingerCursor, "TypeName", "finger-cursor");
 __publicField(FingerCursor, "Properties", {});
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/fixed-foveation.js
+// node_modules/@wonderlandengine/components/dist/fixed-foveation.js
 var FixedFoveation = class extends Component {
   start() {
     this.onSessionStartCallback = this.setFixedFoveation.bind(this);
@@ -13572,7 +13572,7 @@ __publicField(FixedFoveation, "Properties", {
   fixedFoveation: { type: Type.Float, default: 0.5 }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/hand-tracking.js
+// node_modules/@wonderlandengine/components/dist/hand-tracking.js
 var __decorate6 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -13770,7 +13770,7 @@ __decorate6([
   property.object()
 ], HandTracking.prototype, "controllerToDeactivate", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/howler-audio-listener.js
+// node_modules/@wonderlandengine/components/dist/howler-audio-listener.js
 var import_howler = __toESM(require_howler(), 1);
 var HowlerAudioListener = class extends Component {
   init() {
@@ -13794,7 +13794,7 @@ __publicField(HowlerAudioListener, "Properties", {
   spatial: { type: Type.Bool, default: true }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/howler-audio-source.js
+// node_modules/@wonderlandengine/components/dist/howler-audio-source.js
 var import_howler2 = __toESM(require_howler(), 1);
 var HowlerAudioSource = class extends Component {
   start() {
@@ -13855,7 +13855,7 @@ __publicField(HowlerAudioSource, "Properties", {
   src: { type: Type.String, default: "" }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/utils/utils.js
+// node_modules/@wonderlandengine/components/dist/utils/utils.js
 function setFirstMaterialTexture(mat, texture, customTextureProperty) {
   if (customTextureProperty !== "auto") {
     mat[customTextureProperty] = texture;
@@ -13883,8 +13883,14 @@ function setFirstMaterialTexture(mat, texture, customTextureProperty) {
   }
   return false;
 }
+function deg2rad(value) {
+  return value * Math.PI / 180;
+}
+function rad2deg(value) {
+  return value * 180 / Math.PI;
+}
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/image-texture.js
+// node_modules/@wonderlandengine/components/dist/image-texture.js
 var ImageTexture = class extends Component {
   start() {
     if (!this.material) {
@@ -13908,7 +13914,7 @@ __publicField(ImageTexture, "Properties", {
   textureProperty: Property.string("auto")
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/mouse-look.js
+// node_modules/@wonderlandengine/components/dist/mouse-look.js
 var __decorate7 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -14024,7 +14030,7 @@ __decorate7([
   property.bool(false)
 ], MouseLookComponent.prototype, "pointerLockOnClick", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/player-height.js
+// node_modules/@wonderlandengine/components/dist/player-height.js
 var __decorate8 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
@@ -14072,7 +14078,7 @@ __decorate8([
   property.float(1.75)
 ], PlayerHeight.prototype, "height", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/target-framerate.js
+// node_modules/@wonderlandengine/components/dist/target-framerate.js
 var TargetFramerate = class extends Component {
   start() {
     this.onSessionStartCallback = this.setTargetFramerate.bind(this);
@@ -14096,7 +14102,7 @@ __publicField(TargetFramerate, "Properties", {
   framerate: { type: Type.Float, default: 90 }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/teleport.js
+// node_modules/@wonderlandengine/components/dist/teleport.js
 var TeleportComponent = class extends Component {
   init() {
     this._prevThumbstickAxis = new Float32Array(2);
@@ -14319,50 +14325,82 @@ __publicField(TeleportComponent, "Properties", {
   maxDistance: { type: Type.Float, default: 100 }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/trail.js
+// node_modules/@wonderlandengine/components/dist/trail.js
+var __decorate9 = function(decorators, target, key, desc) {
+  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+    r = Reflect.decorate(decorators, target, key, desc);
+  else
+    for (var i = decorators.length - 1; i >= 0; i--)
+      if (d = decorators[i])
+        r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
 var direction = vec3_exports.create();
 var offset = vec3_exports.create();
 var normal = vec3_exports.create();
+var UP = vec3_exports.fromValues(0, 1, 0);
 var Trail = class extends Component {
-  init() {
-    this.points = new Array(this.segments + 1);
-    for (let i = 0; i < this.points.length; ++i) {
-      this.points[i] = vec3_exports.create();
-    }
-    this.currentPointOffset = 0;
-    this.up = [0, 1, 0];
-    this.timeTillNext = this.interval;
-  }
+  /** The material to apply to the trail mesh */
+  material = null;
+  /** The number of segments in the trail mesh */
+  segments = 50;
+  /** The time interval before recording a new point */
+  interval = 0.1;
+  /** The width of the trail (in world space) */
+  width = 1;
+  /** Whether or not the trail should taper off */
+  taper = true;
+  /**
+   * The maximum delta time in seconds, above which the trail resets.
+   * This prevents the trail from jumping around when updates happen
+   * infrequently (e.g. when the tab doesn't have focus).
+   */
+  resetThreshold = 0.5;
+  _currentPointIndex = 0;
+  _timeTillNext = 0;
+  _points = [];
+  _trailContainer = null;
+  _meshComp = null;
+  _mesh = null;
+  _indexData = null;
   start() {
-    this.trailContainer = this.engine.scene.addObject();
-    this.meshComp = this.trailContainer.addComponent("mesh");
-    this.meshComp.material = this.material;
-    const vertexCount = 2 * this.points.length;
-    this.indexData = new Uint32Array(6 * this.segments);
-    for (let i = 0, v = 0; i < vertexCount - 2; i += 2, v += 6) {
-      this.indexData.subarray(v, v + 6).set([i + 1, i + 0, i + 2, i + 2, i + 3, i + 1]);
+    this._points = new Array(this.segments + 1);
+    for (let i = 0; i < this._points.length; ++i) {
+      this._points[i] = vec3_exports.create();
     }
-    this.mesh = new Mesh(this.engine, {
+    this._timeTillNext = this.interval;
+    this._trailContainer = this.engine.scene.addObject();
+    this._meshComp = this._trailContainer.addComponent("mesh");
+    this._meshComp.material = this.material;
+    const vertexCount = 2 * this._points.length;
+    this._indexData = new Uint32Array(6 * this.segments);
+    for (let i = 0, v = 0; i < vertexCount - 2; i += 2, v += 6) {
+      this._indexData.subarray(v, v + 6).set([i + 1, i + 0, i + 2, i + 2, i + 3, i + 1]);
+    }
+    this._mesh = new Mesh(this.engine, {
       vertexCount,
-      indexData: this.indexData,
+      indexData: this._indexData,
       indexType: MeshIndexType.UnsignedInt
     });
-    this.meshComp.mesh = this.mesh;
+    this._meshComp.mesh = this._mesh;
   }
   updateVertices() {
-    const positions = this.mesh.attribute(MeshAttribute.Position);
-    const texCoords = this.mesh.attribute(MeshAttribute.TextureCoordinate);
-    const normals = this.mesh.attribute(MeshAttribute.Normal);
+    if (!this._mesh)
+      return;
+    const positions = this._mesh.attribute(MeshAttribute.Position);
+    const texCoords = this._mesh.attribute(MeshAttribute.TextureCoordinate);
+    const normals = this._mesh.attribute(MeshAttribute.Normal);
     vec3_exports.set(direction, 0, 0, 0);
-    for (let i = 0; i < this.points.length; ++i) {
-      const curr = this.points[(this.currentPointIndex + i + 1) % this.points.length];
-      const next = this.points[(this.currentPointIndex + i + 2) % this.points.length];
-      if (i !== this.points.length - 1) {
+    for (let i = 0; i < this._points.length; ++i) {
+      const curr = this._points[(this._currentPointIndex + i + 1) % this._points.length];
+      const next = this._points[(this._currentPointIndex + i + 2) % this._points.length];
+      if (i !== this._points.length - 1) {
         vec3_exports.sub(direction, next, curr);
       }
-      vec3_exports.cross(offset, this.up, direction);
+      vec3_exports.cross(offset, UP, direction);
       vec3_exports.normalize(offset, offset);
-      const timeFraction = 1 - this.timeTillNext / this.interval;
+      const timeFraction = 1 - this._timeTillNext / this.interval;
       const fraction = (i - timeFraction) / this.segments;
       vec3_exports.scale(offset, offset, (this.taper ? fraction : 1) * this.width / 2);
       positions.set(i * 2, [
@@ -14386,57 +14424,67 @@ var Trail = class extends Component {
         texCoords.set(i * 2 + 1, [1, fraction]);
       }
     }
-    this.mesh.update();
+    this._mesh.update();
   }
   resetTrail() {
-    this.object.getTranslationWorld(this.points[0]);
-    for (let i = 1; i < this.points.length; ++i) {
-      vec3_exports.copy(this.points[i], this.points[0]);
+    this.object.getPositionWorld(this._points[0]);
+    for (let i = 1; i < this._points.length; ++i) {
+      vec3_exports.copy(this._points[i], this._points[0]);
     }
-    this.currentPointIndex = 0;
-    this.timeTillNext = this.interval;
+    this._currentPointIndex = 0;
+    this._timeTillNext = this.interval;
   }
   update(dt) {
-    this.timeTillNext -= dt;
+    this._timeTillNext -= dt;
     if (dt > this.resetThreshold) {
       this.resetTrail();
     }
-    if (this.timeTillNext < 0) {
-      this.currentPointIndex = (this.currentPointIndex + 1) % this.points.length;
-      this.timeTillNext = this.timeTillNext % this.interval + this.interval;
+    if (this._timeTillNext < 0) {
+      this._currentPointIndex = (this._currentPointIndex + 1) % this._points.length;
+      this._timeTillNext = this._timeTillNext % this.interval + this.interval;
     }
-    this.object.getTranslationWorld(this.points[this.currentPointIndex]);
+    this.object.getPositionWorld(this._points[this._currentPointIndex]);
     this.updateVertices();
   }
   onActivate() {
     this.resetTrail();
+    if (this._meshComp)
+      this._meshComp.active = true;
+  }
+  onDeactivate() {
+    if (this._meshComp)
+      this._meshComp.active = false;
   }
   onDestroy() {
-    this.trailContainer.destroy();
-    this.mesh.destroy();
+    if (this._trailContainer)
+      this._trailContainer.destroy();
+    if (this._meshComp)
+      this._meshComp.destroy();
+    if (this._mesh)
+      this._mesh.destroy();
   }
 };
 __publicField(Trail, "TypeName", "trail");
-__publicField(Trail, "Properties", {
-  /** The material to apply to the trail mesh */
-  material: { type: Type.Material },
-  /** The number of segments in the trail mesh */
-  segments: { type: Type.Int, default: 50 },
-  /** The time interval before recording a new point */
-  interval: { type: Type.Float, default: 0.1 },
-  /** The width of the trail (in world space) */
-  width: { type: Type.Float, default: 1 },
-  /** Whether or not the trail should taper off */
-  taper: { type: Type.Bool, default: true },
-  /**
-   * The maximum delta time in seconds, above which the trail resets.
-   * This prevents the trail from jumping around when updates happen
-   * infrequently (e.g. when the tab doesn't have focus).
-   */
-  resetThreshold: { type: Type.Float, default: 0.5 }
-});
+__decorate9([
+  property.material()
+], Trail.prototype, "material", void 0);
+__decorate9([
+  property.int(50)
+], Trail.prototype, "segments", void 0);
+__decorate9([
+  property.float(50)
+], Trail.prototype, "interval", void 0);
+__decorate9([
+  property.float(1)
+], Trail.prototype, "width", void 0);
+__decorate9([
+  property.bool(true)
+], Trail.prototype, "taper", void 0);
+__decorate9([
+  property.float(1)
+], Trail.prototype, "resetThreshold", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/two-joint-ik-solver.js
+// node_modules/@wonderlandengine/components/dist/two-joint-ik-solver.js
 function clamp2(v, a, b) {
   return Math.max(a, Math.min(v, b));
 }
@@ -14538,7 +14586,7 @@ __publicField(TwoJointIkSolver, "Properties", {
   helper: Property.object()
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/video-texture.js
+// node_modules/@wonderlandengine/components/dist/video-texture.js
 var VideoTexture = class extends Component {
   init() {
     if (!this.material) {
@@ -14613,7 +14661,7 @@ __publicField(VideoTexture, "Properties", {
   textureProperty: Property.string("auto")
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/vr-mode-active-switch.js
+// node_modules/@wonderlandengine/components/dist/vr-mode-active-switch.js
 var VrModeActiveSwitch = class extends Component {
   start() {
     this.components = [];
@@ -14665,9 +14713,9 @@ __publicField(VrModeActiveSwitch, "Properties", {
   affectChildren: { type: Type.Bool, default: true }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/plane-detection.js
+// node_modules/@wonderlandengine/components/dist/plane-detection.js
 var import_earcut = __toESM(require_earcut(), 1);
-var __decorate9 = function(decorators, target, key, desc) {
+var __decorate10 = function(decorators, target, key, desc) {
   var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
   if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
     r = Reflect.decorate(decorators, target, key, desc);
@@ -14833,14 +14881,14 @@ planeUpdatePose_fn = function(plane) {
   setXRRigidTransformLocal(o, pose.transform);
 };
 __publicField(PlaneDetection, "TypeName", "plane-detection");
-__decorate9([
+__decorate10([
   property.material()
 ], PlaneDetection.prototype, "planeMaterial", void 0);
-__decorate9([
+__decorate10([
   property.int()
 ], PlaneDetection.prototype, "collisionMask", void 0);
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/vrm.js
+// node_modules/@wonderlandengine/components/dist/vrm.js
 var VRM_ROLL_AXES = {
   X: [1, 0, 0],
   Y: [0, 1, 0],
@@ -15385,7 +15433,7 @@ __publicField(Vrm, "Properties", {
   lookAtTarget: { type: Type.Object }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/node_modules/@wonderlandengine/components/dist/wasd-controls.js
+// node_modules/@wonderlandengine/components/dist/wasd-controls.js
 var _direction = new Float32Array(3);
 var WasdControlsComponent = class extends Component {
   init() {
@@ -15453,7 +15501,562 @@ __publicField(WasdControlsComponent, "Properties", {
   headObject: { type: Type.Object }
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/LogOnClick.js
+// node_modules/@wonderlandengine/components/dist/input-profile.js
+var __decorate11 = function(decorators, target, key, desc) {
+  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+    r = Reflect.decorate(decorators, target, key, desc);
+  else
+    for (var i = decorators.length - 1; i >= 0; i--)
+      if (d = decorators[i])
+        r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var _tempVec = vec3_exports.create();
+var _tempQuat = quat_exports.create();
+var _tempRotation1 = new Float32Array(4);
+var _tempRotation2 = new Float32Array(4);
+var minTemp = new Float32Array(3);
+var maxTemp = new Float32Array(3);
+var hands = ["left", "right"];
+var _InputProfile = class extends Component {
+  _gamepadObjects = {};
+  _controllerModel = null;
+  _defaultControllerComponents;
+  _handedness;
+  _profileJSON = null;
+  _buttons = [];
+  _axes = [];
+  /**
+   * The XR gamepad associated with the current input source.
+   */
+  gamepad;
+  /**
+   * A reference to the emitter which triggered on model lodaed event.
+   */
+  onModelLoaded = new Emitter();
+  /**
+   * Returns url of input profile json file
+   */
+  url;
+  /**
+   * A set of components to filter during component retrieval.
+   */
+  toFilter = /* @__PURE__ */ new Set(["vr-mode-active-mode-switch"]);
+  /**
+   * The index representing the handedness of the controller (0 for left, 1 for right).
+   */
+  handedness = 0;
+  /**
+   * The base path where XR input profiles are stored.
+   */
+  defaultBasePath;
+  /**
+   * An optional folder path for loading custom XR input profiles.
+   */
+  customBasePath;
+  /**
+   * The default 3D controller model used when a custom model fails to load.
+   */
+  defaultController;
+  /**
+   * The object which has HandTracking component added to it.
+   */
+  trackedHand;
+  /**
+   * If true, the input profile will be mapped to the default controller, and no dynamic 3D model of controller will be loaded.
+   */
+  mapToDefaultController;
+  /**
+   * If true, adds a VR mode switch component to the loaded controller model.
+   */
+  addVrModeSwitch;
+  onActivate() {
+    this._handedness = hands[this.handedness];
+    const defaultHandName = "Hand" + this._handedness.charAt(0).toUpperCase() + this._handedness.slice(1);
+    this.trackedHand = this.trackedHand ?? this.object.parent?.findByNameRecursive(defaultHandName)[0];
+    this.defaultController = this.defaultController || this.object.children[0];
+    this._defaultControllerComponents = this._getComponents(this.defaultController);
+    this.engine.onXRSessionStart.add(() => {
+      this.engine.xr?.session.addEventListener("inputsourceschange", this._onInputSourcesChange.bind(this));
+    });
+  }
+  onDeactivate() {
+    this.engine.xr?.session?.removeEventListener("inputsourceschange", this._onInputSourcesChange.bind(this));
+  }
+  /**
+   * Sets newly loaded controllers for the HandTracking component to proper switching.
+   * @param controllerObject The controller object.
+   * @hidden
+   */
+  _setHandTrackingControllers(controllerObject) {
+    const handtrackingComponent = this.trackedHand.getComponent(HandTracking);
+    if (!handtrackingComponent)
+      return;
+    handtrackingComponent.controllerToDeactivate = controllerObject;
+  }
+  /**
+   * Retrieves all components from the specified object and its children.
+   * @param obj The object to retrieve components from.
+   * @return An array of components.
+   * @hidden
+   */
+  _getComponents(obj) {
+    const components = [];
+    if (obj == null)
+      return components;
+    const stack = [obj];
+    while (stack.length > 0) {
+      const currentObj = stack.pop();
+      const comps = currentObj.getComponents().filter((c) => !this.toFilter.has(c.type));
+      components.push(...comps);
+      const children = currentObj.children;
+      for (let i = children.length - 1; i >= 0; --i) {
+        stack.push(children[i]);
+      }
+    }
+    return components;
+  }
+  /**
+   * Activates or deactivates components based on the specified boolean value.
+   * @param active If true, components are set to active; otherwise, they are set to inactive.
+   * @hidden
+   */
+  _setComponentsActive(active) {
+    const comps = this._defaultControllerComponents;
+    if (comps == void 0)
+      return;
+    for (let i = 0; i < comps.length; ++i) {
+      comps[i].active = active;
+    }
+  }
+  /**
+   * Event handler triggered when XR input sources change.
+   * Detects new XR input sources and initiates the loading of input profiles.
+   * @param event The XR input source change event.
+   * @hidden
+   */
+  _onInputSourcesChange(event) {
+    if (this._isModelLoaded() && !this.mapToDefaultController) {
+      this._setComponentsActive(false);
+    }
+    event.added.forEach((xrInputSource) => {
+      if (xrInputSource.hand != null)
+        return;
+      if (this._handedness != xrInputSource.handedness)
+        return;
+      this.gamepad = xrInputSource.gamepad;
+      const profile = this.customBasePath !== "" ? this.customBasePath : this.defaultBasePath + xrInputSource.profiles[0];
+      this.url = profile + "/profile.json";
+      this._profileJSON = _InputProfile.Cache.get(this.url) ?? null;
+      if (this._profileJSON != null)
+        return;
+      fetch(this.url).then((res) => res.json()).then((out) => {
+        this._profileJSON = out;
+        _InputProfile.Cache.set(this.url, this._profileJSON);
+        if (!this._isModelLoaded())
+          this._loadAndMapGamepad(profile);
+      }).catch((e) => {
+        console.error(`Failed to load profile from ${this.url}. Reason:`, e);
+      });
+    });
+  }
+  /**
+   * Checks if the 3D controller model is loaded.
+   * @return True if the model is loaded; otherwise, false.
+   * @hidden
+   */
+  _isModelLoaded() {
+    return this._controllerModel !== null;
+  }
+  /**
+   * Loads the 3D controller model and caches the mapping to the gamepad.
+   * @param profile The path to the input profile.
+   * @hidden
+   */
+  async _loadAndMapGamepad(profile) {
+    const assetPath = profile + "/" + this._handedness + ".glb";
+    this._controllerModel = this.defaultController;
+    if (!this.mapToDefaultController) {
+      try {
+        this._controllerModel = await this.engine.scene.append(assetPath);
+      } catch (e) {
+        console.error(`Failed to load i-p controller model. Reason:`, e, `Continuing with ${this._handedness} default controller.`);
+        this._setComponentsActive(true);
+      }
+      this._controllerModel.parent = this.object;
+      this._controllerModel.setPositionLocal([0, 0, 0]);
+      this._setComponentsActive(false);
+      if (this.addVrModeSwitch)
+        this._controllerModel.addComponent(VrModeActiveSwitch);
+      this.onModelLoaded.notify();
+    }
+    this._cacheGamepadObjectsFromProfile(this._profileJSON, this._controllerModel);
+    this._setHandTrackingControllers(this._controllerModel);
+    this.update = () => this._mapGamepadInput();
+  }
+  /**
+   * Caches gamepad objects (buttons, axes) from the loaded input profile.
+   * @hidden
+   */
+  _cacheGamepadObjectsFromProfile(profile, obj) {
+    const components = profile.layouts[this._handedness].components;
+    if (!components)
+      return;
+    this._buttons = [];
+    this._axes = [];
+    for (const i in components) {
+      const visualResponses = components[i].visualResponses;
+      for (const j in visualResponses) {
+        const visualResponse = visualResponses[j];
+        const valueNode = visualResponse.valueNodeName;
+        const minNode = visualResponse.minNodeName;
+        const maxNode = visualResponse.maxNodeName;
+        this._gamepadObjects[valueNode] = obj.findByNameRecursive(valueNode)[0];
+        this._gamepadObjects[minNode] = obj.findByNameRecursive(minNode)[0];
+        this._gamepadObjects[maxNode] = obj.findByNameRecursive(maxNode)[0];
+        const indice = visualResponses[j].componentProperty;
+        const response = {
+          target: this._gamepadObjects[valueNode],
+          min: this._gamepadObjects[minNode],
+          max: this._gamepadObjects[maxNode],
+          id: components[i].gamepadIndices[indice]
+          // Assign a unique ID
+        };
+        switch (indice) {
+          case "button":
+            this._buttons.push(response);
+            break;
+          case "xAxis":
+          case "yAxis":
+            this._axes.push(response);
+            break;
+        }
+      }
+    }
+  }
+  /**
+   * Assigns a transformed position and rotation to the target based on minimum and maximum values and a normalized input value.
+   * @param target The target object to be transformed.
+   * @param min The minimum object providing transformation limits.
+   * @param max The maximum object providing transformation limits.
+   * @param value The normalized input value.
+   * @hidden
+   */
+  _assignTransform(target, min2, max2, value) {
+    vec3_exports.lerp(_tempVec, min2.getPositionWorld(minTemp), max2.getPositionWorld(maxTemp), value);
+    target.setPositionWorld(_tempVec);
+    quat_exports.lerp(_tempQuat, min2.getRotationWorld(_tempRotation1), max2.getRotationWorld(_tempRotation2), value);
+    quat_exports.normalize(_tempQuat, _tempQuat);
+    target.setRotationWorld(_tempQuat);
+  }
+  /**
+   * Maps input values (buttons, axes) to the 3D controller model.
+   * @hidden
+   */
+  _mapGamepadInput() {
+    for (const button of this._buttons) {
+      const buttonValue = this.gamepad.buttons[button.id].value;
+      this._assignTransform(button.target, button.min, button.max, buttonValue);
+    }
+    for (const axis of this._axes) {
+      const axisValue = this.gamepad.axes[axis.id];
+      const normalizedAxisValue = (axisValue + 1) / 2;
+      this._assignTransform(axis.target, axis.min, axis.max, normalizedAxisValue);
+    }
+  }
+};
+var InputProfile = _InputProfile;
+__publicField(InputProfile, "TypeName", "input-profile");
+/**
+ * A cache to store loaded profiles for reuse.
+ */
+__publicField(InputProfile, "Cache", /* @__PURE__ */ new Map());
+__decorate11([
+  property.enum(hands, 0)
+], InputProfile.prototype, "handedness", void 0);
+__decorate11([
+  property.string("https://cdn.jsdelivr.net/npm/@webxr-input-profiles/assets@latest/dist/profiles/")
+], InputProfile.prototype, "defaultBasePath", void 0);
+__decorate11([
+  property.string()
+], InputProfile.prototype, "customBasePath", void 0);
+__decorate11([
+  property.object()
+], InputProfile.prototype, "defaultController", void 0);
+__decorate11([
+  property.object()
+], InputProfile.prototype, "trackedHand", void 0);
+__decorate11([
+  property.bool(false)
+], InputProfile.prototype, "mapToDefaultController", void 0);
+__decorate11([
+  property.bool(true)
+], InputProfile.prototype, "addVrModeSwitch", void 0);
+
+// node_modules/@wonderlandengine/components/dist/orbital-camera.js
+var __decorate12 = function(decorators, target, key, desc) {
+  var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+  if (typeof Reflect === "object" && typeof Reflect.decorate === "function")
+    r = Reflect.decorate(decorators, target, key, desc);
+  else
+    for (var i = decorators.length - 1; i >= 0; i--)
+      if (d = decorators[i])
+        r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var preventDefault2 = (e) => {
+  e.preventDefault();
+};
+var tempVec4 = [0, 0, 0];
+var tempquat = quat_exports.create();
+var tempquat2 = quat_exports.create();
+var tempVec33 = vec3_exports.create();
+var OrbitalCamera = class extends Component {
+  mouseButtonIndex = 0;
+  radial = 5;
+  minElevation = 0;
+  maxElevation = 89.99;
+  minZoom = 0.01;
+  maxZoom = 10;
+  xSensitivity = 0.5;
+  ySensitivity = 0.5;
+  zoomSensitivity = 0.02;
+  damping = 0.9;
+  _mouseDown = false;
+  _origin = [0, 0, 0];
+  _azimuth = 0;
+  _polar = 45;
+  _initialPinchDistance = 0;
+  _touchStartX = 0;
+  _touchStartY = 0;
+  _azimuthSpeed = 0;
+  _polarSpeed = 0;
+  init() {
+    this.object.getPositionWorld(this._origin);
+  }
+  start() {
+    this._updateCamera();
+  }
+  onActivate() {
+    const canvas2 = this.engine.canvas;
+    canvas2.addEventListener("mousemove", this._onMouseMove);
+    if (this.mouseButtonIndex === 2) {
+      canvas2.addEventListener("contextmenu", preventDefault2, { passive: false });
+    }
+    canvas2.addEventListener("mousedown", this._onMouseDown);
+    canvas2.addEventListener("mouseup", this._onMouseUp);
+    canvas2.addEventListener("wheel", this._onMouseScroll, { passive: false });
+    canvas2.addEventListener("touchstart", this._onTouchStart, { passive: false });
+    canvas2.addEventListener("touchmove", this._onTouchMove, { passive: false });
+    canvas2.addEventListener("touchend", this._onTouchEnd);
+  }
+  onDeactivate() {
+    const canvas2 = this.engine.canvas;
+    canvas2.removeEventListener("mousemove", this._onMouseMove);
+    if (this.mouseButtonIndex === 2) {
+      canvas2.removeEventListener("contextmenu", preventDefault2);
+    }
+    canvas2.removeEventListener("mousedown", this._onMouseDown);
+    canvas2.removeEventListener("mouseup", this._onMouseUp);
+    canvas2.removeEventListener("wheel", this._onMouseScroll);
+    canvas2.removeEventListener("touchstart", this._onTouchStart);
+    canvas2.removeEventListener("touchmove", this._onTouchMove);
+    canvas2.removeEventListener("touchend", this._onTouchEnd);
+    this._mouseDown = false;
+    this._initialPinchDistance = 0;
+    this._touchStartX = 0;
+    this._touchStartY = 0;
+    this._azimuthSpeed = 0;
+    this._polarSpeed = 0;
+  }
+  update() {
+    this._azimuthSpeed *= this.damping;
+    this._polarSpeed *= this.damping;
+    if (Math.abs(this._azimuthSpeed) < 0.01)
+      this._azimuthSpeed = 0;
+    if (Math.abs(this._polarSpeed) < 0.01)
+      this._polarSpeed = 0;
+    this._azimuth += this._azimuthSpeed;
+    this._polar += this._polarSpeed;
+    this._polar = Math.min(this.maxElevation, Math.max(this.minElevation, this._polar));
+    if (this._azimuthSpeed !== 0 || this._polarSpeed !== 0) {
+      this._updateCamera();
+    }
+  }
+  /**
+   * Get the closest position to the given position on the orbit sphere of the camera.
+   * This can be used to get a position and rotation to transition to.
+   *
+   * You pass this a position object. The method calculates the closest positition and updates the position parameter.
+   * It also sets the rotation parameter to reflect the rotate the camera will have when it is on the orbit sphere,
+   * pointing towards the center.
+   * @param position the position to get the closest position to
+   * @param rotation the rotation to get the closest position to
+   */
+  getClosestPosition(position, rotation) {
+    this.object.getRotationWorld(tempquat);
+    this.object.lookAt(this._origin);
+    this.object.getRotationWorld(tempquat2);
+    if (quat_exports.dot(tempquat, tempquat2) < 0) {
+      quat_exports.scale(tempquat2, tempquat2, -1);
+    }
+    this.object.setRotationWorld(tempquat);
+    const directionToCamera = vec3_exports.create();
+    vec3_exports.subtract(directionToCamera, position, this._origin);
+    vec3_exports.normalize(directionToCamera, directionToCamera);
+    const nearestPointOnSphere = vec3_exports.create();
+    vec3_exports.scale(nearestPointOnSphere, directionToCamera, this.radial);
+    vec3_exports.add(nearestPointOnSphere, nearestPointOnSphere, this._origin);
+    vec3_exports.copy(position, nearestPointOnSphere);
+    quat_exports.copy(rotation, tempquat2);
+  }
+  /**
+   * Set the camera position based on the given position and calculate the rotation.
+   * @param cameraPosition the position to set the camera to
+   */
+  setPosition(cameraPosition) {
+    const centerOfOrbit = this._origin;
+    vec3_exports.subtract(tempVec33, cameraPosition, centerOfOrbit);
+    vec3_exports.normalize(tempVec33, tempVec33);
+    const azimuth = Math.atan2(tempVec33[0], tempVec33[2]);
+    const polar = Math.acos(tempVec33[1]);
+    const azimuthDeg = rad2deg(azimuth);
+    const polarDeg = 90 - rad2deg(polar);
+    this._azimuth = azimuthDeg;
+    this._polar = polarDeg;
+  }
+  /**
+   * Update the camera position based on the current azimuth,
+   * polar and radial values
+   */
+  _updateCamera() {
+    const azimuthInRadians = deg2rad(this._azimuth);
+    const polarInRadians = deg2rad(this._polar);
+    tempVec4[0] = this.radial * Math.sin(azimuthInRadians) * Math.cos(polarInRadians);
+    tempVec4[1] = this.radial * Math.sin(polarInRadians);
+    tempVec4[2] = this.radial * Math.cos(azimuthInRadians) * Math.cos(polarInRadians);
+    this.object.setPositionWorld(tempVec4);
+    this.object.translateWorld(this._origin);
+    this.object.lookAt(this._origin);
+  }
+  /* Mouse Event Handlers */
+  _onMouseDown = (e) => {
+    if (e.button === this.mouseButtonIndex) {
+      this._mouseDown = true;
+      document.body.style.cursor = "grabbing";
+      if (e.button === 1) {
+        e.preventDefault();
+        return false;
+      }
+    }
+  };
+  _onMouseUp = (e) => {
+    if (e.button === this.mouseButtonIndex) {
+      this._mouseDown = false;
+      document.body.style.cursor = "initial";
+    }
+  };
+  _onMouseMove = (e) => {
+    if (this.active && this._mouseDown) {
+      if (this.active && this._mouseDown) {
+        this._azimuthSpeed = -(e.movementX * this.xSensitivity);
+        this._polarSpeed = e.movementY * this.ySensitivity;
+      }
+    }
+  };
+  _onMouseScroll = (e) => {
+    e.preventDefault();
+    this.radial *= 1 - e.deltaY * this.zoomSensitivity * -1e-3;
+    this.radial = Math.min(this.maxZoom, Math.max(this.minZoom, this.radial));
+    this._updateCamera();
+  };
+  /* Touch event handlers */
+  _onTouchStart = (e) => {
+    if (e.touches.length === 1) {
+      e.preventDefault();
+      this._touchStartX = e.touches[0].clientX;
+      this._touchStartY = e.touches[0].clientY;
+      this._mouseDown = true;
+    } else if (e.touches.length === 2) {
+      this._initialPinchDistance = this._getDistanceBetweenTouches(e.touches);
+      e.preventDefault();
+    }
+  };
+  _onTouchMove = (e) => {
+    if (!this.active || !this._mouseDown) {
+      return;
+    }
+    e.preventDefault();
+    if (e.touches.length === 1) {
+      const deltaX = e.touches[0].clientX - this._touchStartX;
+      const deltaY = e.touches[0].clientY - this._touchStartY;
+      this._azimuthSpeed = -(deltaX * this.xSensitivity);
+      this._polarSpeed = deltaY * this.ySensitivity;
+      this._touchStartX = e.touches[0].clientX;
+      this._touchStartY = e.touches[0].clientY;
+    } else if (e.touches.length === 2) {
+      const currentPinchDistance = this._getDistanceBetweenTouches(e.touches);
+      const pinchScale = this._initialPinchDistance / currentPinchDistance;
+      this.radial *= pinchScale;
+      this.radial = Math.min(this.maxZoom, Math.max(this.minZoom, this.radial));
+      this._updateCamera();
+      this._initialPinchDistance = currentPinchDistance;
+    }
+  };
+  _onTouchEnd = (e) => {
+    if (e.touches.length < 2) {
+      this._mouseDown = false;
+    }
+    if (e.touches.length === 1) {
+      this._touchStartX = e.touches[0].clientX;
+      this._touchStartY = e.touches[0].clientY;
+    }
+  };
+  /**
+   * Helper function to calculate the distance between two touch points
+   * @param touches list of touch points
+   * @returns distance between the two touch points
+   */
+  _getDistanceBetweenTouches(touches) {
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+};
+__publicField(OrbitalCamera, "TypeName", "orbital-camera");
+__decorate12([
+  property.int()
+], OrbitalCamera.prototype, "mouseButtonIndex", void 0);
+__decorate12([
+  property.float(5)
+], OrbitalCamera.prototype, "radial", void 0);
+__decorate12([
+  property.float()
+], OrbitalCamera.prototype, "minElevation", void 0);
+__decorate12([
+  property.float(89.99)
+], OrbitalCamera.prototype, "maxElevation", void 0);
+__decorate12([
+  property.float()
+], OrbitalCamera.prototype, "minZoom", void 0);
+__decorate12([
+  property.float(10)
+], OrbitalCamera.prototype, "maxZoom", void 0);
+__decorate12([
+  property.float(0.5)
+], OrbitalCamera.prototype, "xSensitivity", void 0);
+__decorate12([
+  property.float(0.5)
+], OrbitalCamera.prototype, "ySensitivity", void 0);
+__decorate12([
+  property.float(0.02)
+], OrbitalCamera.prototype, "zoomSensitivity", void 0);
+__decorate12([
+  property.float(0.9)
+], OrbitalCamera.prototype, "damping", void 0);
+
+// js/LogOnClick.js
 var LogOnClick = class extends Component {
   init() {
     this.direction = vec3_exports.create();
@@ -15508,7 +16111,7 @@ __publicField(LogOnClick, "Properties", {
   infoBox: Property.object()
 });
 
-// C:/Users/zexer/OneDrive/Dokumenter/WonderlandEngine/fishies/js/index.js
+// js/index.js
 var Constants = {
   ProjectName: "Fishies",
   RuntimeBaseName: "WonderlandRuntime",
